@@ -296,6 +296,270 @@ Ademais, estudando a [@tbl-m10], a [@tbl-m21] e a [@tbl-m24] que falam sobre os 
 
 ### letra d
 
+A seguinte análise tem como objetivo a confecção das Tábuas de Vida para os anos de 2010 e 2024, utilizando como base as $TMI$ (Taxa de Mortalidade Infantil) para os sexos masculino e feminino, obtendo os valores segundo a tabela a seguir. 
+
+Além disso, para um maior aprofundamento e averiguação se os valores encontrados para o munícipio Ipatinga, será comparado os valores obtidos neste relatório utilizando as projeções do IBGE aliado com as estimativas encontradas pelo estudo GBD.
+
+::: {#tbl-TMI layout-align="center" tbl-pos="H"}
+```{=latex}
+
+\begin{tabular}{l r}
+  \hline
+  \textbf{Sexo} & \textbf{TMI} \\
+  \hline
+  Masculino & 8,089460 \\
+  Feminino  & 7,601163 \\
+  \hline
+\end{tabular}
+
+```
+Taxa de Mortalidade Infantil (TMI) por sexo em 2023
+:::
+
+Observa-se pela [@tbl-TMI] que a taxa de mortalidade infantil em 2023 para o sexo masculino se encontra um pouco maior do que o sexo feminino, com uma diferença de 0,488297.
+
+Com essa informação, aliado com as taxas de específicas de mortalidade calculadas ($nMx$) no item a e que serão recordadas a seguir, as Tábuas de Vida forão confecciondas separadas pelos anos em análise, 2010 e 2024, e por sexo, masculinino e feminino. Ademais, para uma melhor visualização, as Tábuas de Vida serão separadas por ano.
+
+::: {#tbl-nMxf layout-align="center" tbl-pos="H"}
+```{=latex}
+
+\begin{tabular}{l r r}
+        \hline
+        \textbf{Grupo Etário} & \textbf{2010} & \textbf{2024} \\
+        \hline
+        $<$ 1 ano & 0,00864 & 0,00959 \\
+        1 a 4 anos & 0,00046 & 0,00060 \\
+        5 a 9 anos & 0,00011 & 0,00043 \\
+        10 a 14 anos & 0,00000 & 0,00028 \\
+        15 a 19 anos & 0,00019 & 0,00040 \\
+        20 a 24 anos & 0,00069 & 0,00024 \\
+        25 a 29 anos & 0,00067 & 0,00045 \\
+        30 a 34 anos & 0,00156 & 0,00082 \\
+        35 a 39 anos & 0,00117 & 0,00144 \\
+        40 a 44 anos & 0,00199 & 0,00189 \\
+        45 a 49 anos & 0,00223 & 0,00267 \\
+        50 a 54 anos & 0,00507 & 0,00269 \\
+        55 a 59 anos & 0,00611 & 0,00388 \\
+        60 a 64 anos & 0,00870 & 0,00963 \\
+        65 a 69 anos & 0,01730 & 0,01358 \\
+        70 a 74 anos & 0,02368 & 0,01744 \\
+        75 a 79 anos & 0,03092 & 0,02656 \\
+        80 anos e mais & 0,09271 & 0,09133 \\
+        \hline
+    \end{tabular}
+
+```
+Taxas Específicas de Mortalidade ($nMx$) para o Sexo Masculino - 2010 e 2024
+:::
+
+::: {#tbl-nMxm layout-align="center" tbl-pos="H"}
+```{=latex}
+
+\begin{tabular}{l r r}
+        \hline
+        \textbf{Grupo Etário} & \textbf{2010} & \textbf{2024} \\
+        \hline
+        $<$ 1 ano & 0,01464 & 0,00928 \\
+        1 a 4 anos & 0,00044 & 0,00058 \\
+        5 a 9 anos & 0,00033 & 0,00000 \\
+        10 a 14 anos & 0,00040 & 0,00041 \\
+        15 a 19 anos & 0,00240 & 0,00103 \\
+        20 a 24 anos & 0,00229 & 0,00261 \\
+        25 a 29 anos & 0,00281 & 0,00216 \\
+        30 a 34 anos & 0,00393 & 0,00374 \\
+        35 a 39 anos & 0,00258 & 0,00156 \\
+        40 a 44 anos & 0,00366 & 0,00371 \\
+        45 a 49 anos & 0,00510 & 0,00495 \\
+        50 a 54 anos & 0,00685 & 0,00602 \\
+        55 a 59 anos & 0,00941 & 0,00956 \\
+        60 a 64 anos & 0,01218 & 0,01424 \\
+        65 a 69 anos & 0,02225 & 0,02198 \\
+        70 a 74 anos & 0,02996 & 0,02730 \\
+        75 a 79 anos & 0,04647 & 0,03939 \\
+        80 anos e mais & 0,09830 & 0,10557 \\
+        \hline
+    \end{tabular}
+
+```
+Taxas Específicas de Mortalidade ($nMx$) para o Sexo Masculino - 2010 e 2024
+:::
+
+#### 2010
+
+::: {#tbl-tvf10 layout-align="center" tbl-pos="H"} 
+```{=latex}
+
+\resizebox{\textwidth}{!}{
+\begin{tabular}{l r r r r r r r r r r}
+            \hline
+            \textbf{Grupo Etário} & \textbf{n} & \textbf{nMx} & \textbf{nax} & \textbf{nqx} & \textbf{npx} & \textbf{lx} & \textbf{ndx} & \textbf{nLx} & \textbf{Tx} & \textbf{ex} \\
+            \hline
+            $<$ 1 ano & 1 & 0,00864 & 0,100 & 0,00858 & 0,99142 & 100000 & 858 & 99228 & 8010774 & 80,11 \\
+            1 a 4 anos & 4 & 0,00046 & 1,500 & 0,00185 & 0,99815 & 99142 & 183 & 396110 & 7911546 & 79,80 \\
+            5 a 9 anos & 5 & 0,00011 & 2,500 & 0,00057 & 0,99943 & 98959 & 57 & 494653 & 7515435 & 75,95 \\
+            10 a 14 anos & 5 & 0,00000 & 2,500 & 0,00000 & 1,00000 & 98902 & 0 & 494511 & 7020783 & 70,99 \\
+            15 a 19 anos & 5 & 0,00019 & 2,500 & 0,00095 & 0,99905 & 98902 & 94 & 494276 & 6526272 & 65,99 \\
+            20 a 24 anos & 5 & 0,00069 & 2,500 & 0,00343 & 0,99657 & 98808 & 339 & 493195 & 6031995 & 61,05 \\
+            25 a 29 anos & 5 & 0,00067 & 2,500 & 0,00335 & 0,99665 & 98470 & 330 & 491523 & 5538801 & 56,25 \\
+            30 a 34 anos & 5 & 0,00156 & 2,500 & 0,00779 & 0,99221 & 98140 & 764 & 488788 & 5047277 & 51,43 \\
+            35 a 39 anos & 5 & 0,00117 & 2,500 & 0,00584 & 0,99416 & 97376 & 569 & 485455 & 4558489 & 46,81 \\
+            40 a 44 anos & 5 & 0,00199 & 2,500 & 0,00989 & 0,99011 & 96806 & 957 & 481640 & 4073034 & 42,07 \\
+            45 a 49 anos & 5 & 0,00223 & 2,500 & 0,01111 & 0,98889 & 95849 & 1065 & 476585 & 3591394 & 37,47 \\
+            50 a 54 anos & 5 & 0,00507 & 2,500 & 0,02503 & 0,97497 & 94785 & 2372 & 467993 & 3114809 & 32,86 \\
+            55 a 59 anos & 5 & 0,00611 & 2,500 & 0,03008 & 0,96992 & 92413 & 2780 & 455114 & 2646816 & 28,64 \\
+            60 a 64 anos & 5 & 0,00870 & 2,500 & 0,04256 & 0,95744 & 89633 & 3815 & 438627 & 2191702 & 24,45 \\
+            65 a 69 anos & 5 & 0,01730 & 2,500 & 0,08293 & 0,91707 & 85818 & 7117 & 411297 & 1753075 & 20,43 \\
+            70 a 74 anos & 5 & 0,02368 & 2,500 & 0,11177 & 0,88823 & 78701 & 8796 & 371515 & 1341778 & 17,05 \\
+            75 a 79 anos & 5 & 0,03092 & 2,500 & 0,14349 & 0,85651 & 69905 & 10031 & 324448 & 970263 & 13,88 \\
+            80 anos e mais & $\omega$ & 0,09271 & 10,786 & 1,00000 & 0,00000 & 59874 & 59874 & 645815 & 645815 & 10,79 \\
+            \hline
+        \end{tabular}
+    } 
+
+```
+Tábua de Vida - Sexo Feminino (2010)
+:::
+
+::: {#tbl-tvm10 layout-align="center" tbl-pos="H"} 
+```{=latex}
+
+\resizebox{\textwidth}{!}{
+\begin{tabular}{l r r r r r r r r r r}
+            \hline
+            \textbf{Grupo Etário} & \textbf{n} & \textbf{nMx} & \textbf{nax} & \textbf{nqx} & \textbf{npx} & \textbf{lx} & \textbf{ndx} & \textbf{nLx} & \textbf{Tx} & \textbf{ex} \\
+            \hline
+            $<$ 1 ano & 1 & 0,01464 & 0,100 & 0,01445 & 0,98555 & 100000 & 1445 & 98700 & 7383632 & 73,84 \\
+            1 a 4 anos & 4 & 0,00044 & 1,500 & 0,00175 & 0,99825 & 98555 & 173 & 393790 & 7284932 & 73,92 \\
+            5 a 9 anos & 5 & 0,00033 & 2,500 & 0,00164 & 0,99836 & 98383 & 161 & 491510 & 6891142 & 70,04 \\
+            10 a 14 anos & 5 & 0,00040 & 2,500 & 0,00202 & 0,99798 & 98222 & 199 & 490612 & 6399632 & 65,16 \\
+            15 a 19 anos & 5 & 0,00240 & 2,500 & 0,01191 & 0,98809 & 98023 & 1168 & 487196 & 5909020 & 60,28 \\
+            20 a 24 anos & 5 & 0,00229 & 2,500 & 0,01140 & 0,98860 & 96855 & 1104 & 481517 & 5421825 & 55,98 \\
+            25 a 29 anos & 5 & 0,00281 & 2,500 & 0,01394 & 0,98606 & 95751 & 1334 & 475421 & 4940308 & 51,60 \\
+            30 a 34 anos & 5 & 0,00393 & 2,500 & 0,01948 & 0,98052 & 94417 & 1839 & 467487 & 4464887 & 47,29 \\
+            35 a 39 anos & 5 & 0,00258 & 2,500 & 0,01282 & 0,98718 & 92578 & 1187 & 459922 & 3997400 & 43,18 \\
+            40 a 44 anos & 5 & 0,00366 & 2,500 & 0,01813 & 0,98187 & 91391 & 1657 & 452813 & 3537477 & 38,71 \\
+            45 a 49 anos & 5 & 0,00510 & 2,500 & 0,02519 & 0,97481 & 89734 & 2260 & 443021 & 3084664 & 34,38 \\
+            50 a 54 anos & 5 & 0,00685 & 2,500 & 0,03368 & 0,96632 & 87474 & 2946 & 430006 & 2641643 & 30,20 \\
+            55 a 59 anos & 5 & 0,00941 & 2,500 & 0,04599 & 0,95401 & 84528 & 3887 & 412923 & 2211636 & 26,16 \\
+            60 a 64 anos & 5 & 0,01218 & 2,500 & 0,05908 & 0,94092 & 80641 & 4764 & 391295 & 1798713 & 22,31 \\
+            65 a 69 anos & 5 & 0,02225 & 2,500 & 0,10538 & 0,89462 & 75877 & 7996 & 359394 & 1407419 & 18,55 \\
+            70 a 74 anos & 5 & 0,02996 & 2,500 & 0,13937 & 0,86063 & 67881 & 9461 & 315753 & 1048024 & 15,44 \\
+            75 a 79 anos & 5 & 0,04647 & 2,500 & 0,20818 & 0,79182 & 58420 & 12162 & 261697 & 732271 & 12,53 \\
+            80 anos e mais & $\omega$ & 0,09830 & 10,173 & 1,00000 & 0,00000 & 46258 & 46258 & 470574 & 470574 & 10,17 \\
+            \hline
+        \end{tabular}
+    }
+
+```
+Tábua de Vida - Sexo Masculino (2010)
+:::
+
+::: {#tbl-est2010 layout-align="center" tbl-pos="H"}
+```{=latex}
+
+\begin{tabular}{l c r r}
+        \hline
+        \textbf{Sexo} & \textbf{Idade (anos)} & \textbf{IBGE} & \textbf{GBD} \\
+        \hline
+        Mulheres & 0  & 78,33 & 79,52 \\
+        Mulheres & 60 & 23,37 & 54,03 \\
+        Homens   & 0  & 71,34 & 72,84 \\
+        Homens   & 60 & 20,05 & 20,86 \\
+        \hline
+    \end{tabular}
+
+```
+Esperança de Vida por Sexo e Idade em Minas Gerais (IBGE x GBD) - 2010
+:::
+
+#### 2024
+
+::: {#tbl-tvf24 layout-align="center" tbl-pos="H"} 
+```{=latex}
+
+\resizebox{\textwidth}{!}{
+        \begin{tabular}{l r r r r r r r r r r}
+            \hline
+            \textbf{Grupo Etário} & \textbf{n} & \textbf{nMx} & \textbf{nax} & \textbf{nqx} & \textbf{npx} & \textbf{lx} & \textbf{ndx} & \textbf{nLx} & \textbf{Tx} & \textbf{ex} \\
+            \hline
+            $<$ 1 ano & 1 & 0,00959 & 0,100 & 0,00951 & 0,99049 & 100000 & 951 & 99144 & 8145444 & 81,45 \\
+            1 a 4 anos & 4 & 0,00060 & 1,500 & 0,00239 & 0,99761 & 99049 & 237 & 395604 & 8046299 & 81,24 \\
+            5 a 9 anos & 5 & 0,00043 & 2,500 & 0,00217 & 0,99783 & 98812 & 215 & 493524 & 7650695 & 77,43 \\
+            10 a 14 anos & 5 & 0,00028 & 2,500 & 0,00142 & 0,99858 & 98598 & 140 & 492637 & 7157171 & 72,59 \\
+            15 a 19 anos & 5 & 0,00040 & 2,500 & 0,00199 & 0,99801 & 98457 & 196 & 491798 & 6664533 & 67,69 \\
+            20 a 24 anos & 5 & 0,00024 & 2,500 & 0,00118 & 0,99882 & 98262 & 116 & 491020 & 6172735 & 62,82 \\
+            25 a 29 anos & 5 & 0,00045 & 2,500 & 0,00227 & 0,99773 & 98146 & 223 & 490173 & 5681716 & 57,89 \\
+            30 a 34 anos & 5 & 0,00082 & 2,500 & 0,00410 & 0,99590 & 97923 & 401 & 488614 & 5191542 & 53,02 \\
+            35 a 39 anos & 5 & 0,00144 & 2,500 & 0,00718 & 0,99282 & 97522 & 700 & 485861 & 4702929 & 48,22 \\
+            40 a 44 anos & 5 & 0,00189 & 2,500 & 0,00939 & 0,99061 & 96822 & 909 & 481838 & 4217067 & 43,55 \\
+            45 a 49 anos & 5 & 0,00267 & 2,500 & 0,01328 & 0,98672 & 95913 & 1273 & 476381 & 3735230 & 38,94 \\
+            50 a 54 anos & 5 & 0,00269 & 2,500 & 0,01338 & 0,98662 & 94639 & 1266 & 470031 & 3258849 & 34,43 \\
+            55 a 59 anos & 5 & 0,00388 & 2,500 & 0,01922 & 0,98078 & 93373 & 1795 & 462378 & 2788818 & 29,87 \\
+            60 a 64 anos & 5 & 0,00963 & 2,500 & 0,04704 & 0,95296 & 91578 & 4308 & 447122 & 2326439 & 25,40 \\
+            65 a 69 anos & 5 & 0,01358 & 2,500 & 0,06567 & 0,93433 & 87270 & 5731 & 422024 & 1879318 & 21,53 \\
+            70 a 74 anos & 5 & 0,01744 & 2,500 & 0,08357 & 0,91643 & 81539 & 6814 & 390662 & 1457293 & 17,87 \\
+            75 a 79 anos & 5 & 0,02656 & 2,500 & 0,12454 & 0,87546 & 74725 & 9306 & 350362 & 1066632 & 14,27 \\
+            80 anos e mais & $\omega$ & 0,09133 & 10,949 & 1,00000 & 0,00000 & 65419 & 65419 & 716270 & 716270 & 10,95 \\
+            \hline
+        \end{tabular}
+    }
+
+```
+Tábua de Vida - Sexo Feminino (2024)
+:::
+
+::: {#tbl-tvm24 layout-align="center" tbl-pos="H"} 
+```{=latex}
+
+\resizebox{\textwidth}{!}{
+        \begin{tabular}{l r r r r r r r r r r}
+            \hline
+            \textbf{Grupo Etário} & \textbf{n} & \textbf{nMx} & \textbf{nax} & \textbf{nqx} & \textbf{npx} & \textbf{lx} & \textbf{ndx} & \textbf{nLx} & \textbf{Tx} & \textbf{ex} \\
+            \hline
+            $<$ 1 ano & 1 & 0,00928 & 0,100 & 0,00920 & 0,99080 & 100000 & 920 & 99172 & 7494262 & 74,94 \\
+            1 a 4 anos & 4 & 0,00058 & 1,500 & 0,00232 & 0,99768 & 99080 & 230 & 395745 & 7395091 & 74,64 \\
+            5 a 9 anos & 5 & 0,00000 & 2,500 & 0,00000 & 1,00000 & 98850 & 0 & 494251 & 6999345 & 70,81 \\
+            10 a 14 anos & 5 & 0,00041 & 2,500 & 0,00204 & 0,99796 & 98850 & 202 & 493747 & 6505094 & 65,81 \\
+            15 a 19 anos & 5 & 0,00103 & 2,500 & 0,00512 & 0,99488 & 98649 & 505 & 491981 & 6011347 & 60,94 \\
+            20 a 24 anos & 5 & 0,00261 & 2,500 & 0,01297 & 0,98703 & 98144 & 1273 & 487537 & 5519366 & 56,24 \\
+            25 a 29 anos & 5 & 0,00216 & 2,500 & 0,01074 & 0,98926 & 96871 & 1041 & 481751 & 5031829 & 51,94 \\
+            30 a 34 anos & 5 & 0,00374 & 2,500 & 0,01850 & 0,98150 & 95830 & 1773 & 474716 & 4550078 & 47,48 \\
+            35 a 39 anos & 5 & 0,00156 & 2,500 & 0,00776 & 0,99224 & 94057 & 730 & 468460 & 4075362 & 43,33 \\
+            40 a 44 anos & 5 & 0,00371 & 2,500 & 0,01837 & 0,98163 & 93327 & 1714 & 462350 & 3606902 & 38,65 \\
+            45 a 49 anos & 5 & 0,00495 & 2,500 & 0,02445 & 0,97555 & 91613 & 2240 & 452466 & 3144552 & 34,32 \\
+            50 a 54 anos & 5 & 0,00602 & 2,500 & 0,02967 & 0,97033 & 89373 & 2652 & 440237 & 2692086 & 30,12 \\
+            55 a 59 anos & 5 & 0,00956 & 2,500 & 0,04666 & 0,95334 & 86722 & 4047 & 423492 & 2251848 & 25,97 \\
+            60 a 64 anos & 5 & 0,01424 & 2,500 & 0,06875 & 0,93125 & 82675 & 5684 & 399166 & 1828356 & 22,11 \\
+            65 a 69 anos & 5 & 0,02198 & 2,500 & 0,10418 & 0,89582 & 76991 & 8021 & 364905 & 1429190 & 18,56 \\
+            70 a 74 anos & 5 & 0,02730 & 2,500 & 0,12779 & 0,87221 & 68971 & 8814 & 322820 & 1064285 & 15,43 \\
+            75 a 79 anos & 5 & 0,03939 & 2,500 & 0,17929 & 0,82071 & 60157 & 10786 & 273821 & 741465 & 12,33 \\
+            80 anos e mais & $\omega$ & 0,10557 & 9,472 & 1,00000 & 0,00000 & 49371 & 49371 & 467645 & 467645 & 9,47 \\
+            \hline
+        \end{tabular}
+    }
+
+```
+Tábua de Vida - Sexo Masculino (2024)
+:::
+
+::: {#tbl-est2024 layout-align="center" tbl-pos="H"}
+```{=latex}
+
+\begin{tabular}{l c r r}
+        \hline
+        \textbf{Sexo} & \textbf{Idade (anos)} & \textbf{IBGE} & \textbf{GBD} \\
+        \hline
+        Mulheres & 0  & 80,55 & 81,14 \\
+        Mulheres & 60 & 24,65 & 25,00 \\
+        Homens   & 0  & 74,49 & 75,05 \\
+        Homens   & 60 & 21,51 & 21,86 \\
+        \hline
+    \end{tabular}
+
+```
+Esperança de Vida por Sexo e Idade em Minas Gerais (IBGE x GBD) - 2024
+:::
+
 ```{r}
 #| label: fig-
 #| fig-cap: "Gráfico "
