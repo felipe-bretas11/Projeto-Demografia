@@ -294,7 +294,7 @@ Analisando as pessoas do sexo feminino utilizando a [@tbl-f10], a [@tbl-f21] e a
 Ademais, estudando a [@tbl-m10], a [@tbl-m21] e a [@tbl-m24] que falam sobre os indivíduos do sexo masculino, semelhantemente aos grupos mais frequentes para as mulheres, o maior número de óbitos em um ano, com 952, foi no ano de 2021 e as "Neoplasias malignas" aparecendo sempre entre os grupos mais com maior número de mortes reportadas nos anos analisados. Diferentemente das mulheres, as "Agressões" apareceram em todos os anos em análise para os homens, com 130 ocorrências. Por fim, a Covid-19 apareceu em 2 anos como mencionado nas análises em cada ano individualmente somente para esse sexo, com 334 casos, mas somente 3 em 2024.
 
 
-### letra d
+### Letra d
 
 A seguinte análise tem como objetivo a confecção das Tábuas de Vida para os anos de 2010 e 2024, utilizando como base as $TMI$ (Taxa de Mortalidade Infantil) para os sexos masculino e feminino, obtendo os valores segundo a tabela a seguir. 
 
@@ -316,7 +316,7 @@ Além disso, para um maior aprofundamento e averiguação se os valores encontra
 Taxa de Mortalidade Infantil (TMI) por sexo em 2023
 :::
 
-Observa-se pela [@tbl-TMI] que a taxa de mortalidade infantil em 2023 para o sexo masculino se encontra um pouco maior do que o sexo feminino, com uma diferença de 0,488297.
+Observa-se pela [@tbl-TMI] que a taxa de mortalidade infantil ($TMI$) em 2023 para o sexo masculino se encontra um pouco maior do que o sexo feminino, com uma diferença de 0,488297.
 
 Com essa informação, aliado com as taxas de específicas de mortalidade calculadas ($nMx$) no item a e que serão recordadas a seguir, as Tábuas de Vida forão confecciondas separadas pelos anos em análise, 2010 e 2024, e por sexo, masculinino e feminino. Ademais, para uma melhor visualização, as Tábuas de Vida serão separadas por ano.
 
@@ -392,7 +392,7 @@ Taxas Específicas de Mortalidade ($nMx$) para o Sexo Masculino - 2010 e 2024
 \resizebox{\textwidth}{!}{
 \begin{tabular}{l r r r r r r r r r r}
             \hline
-            \textbf{Grupo Etário} & \textbf{n} & \textbf{nMx} & \textbf{nax} & \textbf{nqx} & \textbf{npx} & \textbf{lx} & \textbf{ndx} & \textbf{nLx} & \textbf{Tx} & \textbf{ex} \\
+            \textbf{Grupo Etário} & \textbf{$n$} & \textbf{$nMx$} & \textbf{$nAx$} & \textbf{$nqx$} & \textbf{$npx$} & \textbf{$lx$} & \textbf{$ndx$} & \textbf{$nLx$} & \textbf{$Tx$} & \textbf{$ex$} \\
             \hline
             $<$ 1 ano & 1 & 0,00864 & 0,100 & 0,00858 & 0,99142 & 100000 & 858 & 99228 & 8010774 & 80,11 \\
             1 a 4 anos & 4 & 0,00046 & 1,500 & 0,00185 & 0,99815 & 99142 & 183 & 396110 & 7911546 & 79,80 \\
@@ -426,7 +426,7 @@ Tábua de Vida - Sexo Feminino (2010)
 \resizebox{\textwidth}{!}{
 \begin{tabular}{l r r r r r r r r r r}
             \hline
-            \textbf{Grupo Etário} & \textbf{n} & \textbf{nMx} & \textbf{nax} & \textbf{nqx} & \textbf{npx} & \textbf{lx} & \textbf{ndx} & \textbf{nLx} & \textbf{Tx} & \textbf{ex} \\
+            \textbf{Grupo Etário} & \textbf{$n$} & \textbf{$nMx$} & \textbf{$nAx$} & \textbf{$nqx$} & \textbf{$npx$} & \textbf{$lx$} & \textbf{$ndx$} & \textbf{$nLx$} & \textbf{$Tx$} & \textbf{$ex$} \\
             \hline
             $<$ 1 ano & 1 & 0,01464 & 0,100 & 0,01445 & 0,98555 & 100000 & 1445 & 98700 & 7383632 & 73,84 \\
             1 a 4 anos & 4 & 0,00044 & 1,500 & 0,00175 & 0,99825 & 98555 & 173 & 393790 & 7284932 & 73,92 \\
@@ -480,7 +480,7 @@ Esperança de Vida por Sexo e Idade em Minas Gerais (IBGE x GBD) - 2010
 \resizebox{\textwidth}{!}{
         \begin{tabular}{l r r r r r r r r r r}
             \hline
-            \textbf{Grupo Etário} & \textbf{n} & \textbf{nMx} & \textbf{nax} & \textbf{nqx} & \textbf{npx} & \textbf{lx} & \textbf{ndx} & \textbf{nLx} & \textbf{Tx} & \textbf{ex} \\
+            \textbf{Grupo Etário} & \textbf{$n$} & \textbf{$nMx$} & \textbf{$nAx$} & \textbf{$nqx$} & \textbf{$npx$} & \textbf{$lx$} & \textbf{$ndx$} & \textbf{$nLx$} & \textbf{$Tx$} & \textbf{$ex$} \\
             \hline
             $<$ 1 ano & 1 & 0,00959 & 0,100 & 0,00951 & 0,99049 & 100000 & 951 & 99144 & 8145444 & 81,45 \\
             1 a 4 anos & 4 & 0,00060 & 1,500 & 0,00239 & 0,99761 & 99049 & 237 & 395604 & 8046299 & 81,24 \\
@@ -514,7 +514,7 @@ Tábua de Vida - Sexo Feminino (2024)
 \resizebox{\textwidth}{!}{
         \begin{tabular}{l r r r r r r r r r r}
             \hline
-            \textbf{Grupo Etário} & \textbf{n} & \textbf{nMx} & \textbf{nax} & \textbf{nqx} & \textbf{npx} & \textbf{lx} & \textbf{ndx} & \textbf{nLx} & \textbf{Tx} & \textbf{ex} \\
+            \textbf{Grupo Etário} & \textbf{$n$} & \textbf{$nMx$} & \textbf{$nAx$} & \textbf{$nqx$} & \textbf{$npx$} & \textbf{$lx$} & \textbf{$ndx$} & \textbf{$nLx$} & \textbf{$Tx$} & \textbf{$ex$} \\
             \hline
             $<$ 1 ano & 1 & 0,00928 & 0,100 & 0,00920 & 0,99080 & 100000 & 920 & 99172 & 7494262 & 74,94 \\
             1 a 4 anos & 4 & 0,00058 & 1,500 & 0,00232 & 0,99768 & 99080 & 230 & 395745 & 7395091 & 74,64 \\
