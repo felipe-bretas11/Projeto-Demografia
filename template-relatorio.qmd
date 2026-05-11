@@ -12,6 +12,14 @@ source("rdocs/source/packages.R")
 
 # Introdução
 
+Ipatinga é um município de Minas Gerais com população de 227.731 pessoas (Censo 2022) localizada no "Vale do Aço".  Esse trabalho teve como objetivo entender as dinâmicas populacionais da população de Ipatinga durante o período de 2000 até 2024. Para isso, foram utilizadas várias técnicas aprendidas no curso de Demografia no primeiro semestre de 2026 tais como o Diagrama de Lexis, Tábua de Vida e outras estatísticas vitais, essenciais para a compreensão do cenário populacional do munícipio mineiro.
+
+Os bancos de dados para nascimentos e mortalidade foram obtidos por meio do Datasus e, por meio do pacote microdatasus desenvolvido por  Raphael de Freitas Saldanha. As estimativas populacionais foram obtidas do site da Ripsa.
+
+As bases de dados utilizadas para os nascimentos (SINASC) e para a mortalidade (SIM) foram obtidas utilizando o tabnet do Datasus em conjunto com o pacote "microdatasus" desenvolvido por Raphael de Freitas Saldanha. Além disso, as estimativas populacionais utilizadas neste estudo foram obtidas via site da Ripsa.
+
+Para o tratamento e análise de dados, foram utilizados o software R em sua versão 4.5.1. ambientado em sua interface gráfica Rstudio, ambos sendo gratuitos para tratamento de dados e confecção dos gráficos presentes neste material. Ademais, foi utilizado também o Excel para melhor visualização e manipulação dos dados utilizados no software comentado anteriormente.
+
 # Referencial Teórico
 
 # Análises

@@ -7,25 +7,274 @@ output-file: "Nome do alocado - análise 1 e 2"
 source("rdocs/consultor1.R")
 ```
 
-```{r}
-# Rodar apenas uma vez na vida!
-## Instalando o tinytex(pacote apenas)
-### CRAN version
-install.packages('tinytex')
-
-
-## Baixando o tinytex
-library(tinytex)
-tinytex::install_tinytex()
-```
-
 # Objetivo
 
 Esse template foi criado para o alocado conseguir observar como ficaria sua análise o arquivo principal. É daqui que o gerente de projetos irá copiar a análise e inserir no documento principal que gerará o relatório estatístico.
 
 # Análises
 
-## Análise 1
+## Questão 3
+
+Essa análise tem como objetivo analisar a mortalidade na cidade de Ipatinga no período estudado dentro do material, com foco nos anos a serem citados em cada uma das introduções de cada análise. Para isso, serão utilizados dados do SIM, obtidos via Tabnet - Datasus.
+
+Dessa maneira, será calculado $TBM$ (Taxa Bruta de Mortalidade), ${}_n M_x$ (Taxa específica de mortalidade entre $x$ e $x+n$ anos), $TMI$ (Taxa de Mortalidade Infantil) e outros componentes da mortalidade infantil.
+
+É importante ser mencionado que, para os anos, sexo e faixas etárias:
+
+- 2010 Feminino - 10 a 14 anos;
+- 2021 Feminino - 1 a 4 anos;
+- 2024 Masculino - 5 a 9 anos
+
+Foram encontradas nenhuma observação, tanto no Tabnet - Datasus quanto no banco do microdatasus, sendo assim englobado com base nas faixas etárias utilizadas em cada uma das análises com a falta desses dados.
+
+### Letra c
+
+A fim de comparar as estruturas de mortalidade por causas entre os anos de 2010, 2021 e 2024, a seguinte análise utilizará os agrupamentos do CID-10, retirando os 20 grupos mais frequentes ems seus respectivos anos. Assim, o estudo será analisado sobre os grupos etários (menor que 5; 5 a 14 anos; 15 a 39 anos; 40 a 59 anos; 60 anos e mais), dando foco para a Covid-19 nos anos em que ela existiam sendo acrescentado um 21º grupo caso não apareça entre os 20 mais comuns.
+
+Para melhor visualização dos dados o estudo será segmentado nos anos comentados anteriormente, a fim de comparar as diferentes estruturas entre os sexos feminino e masculino.
+
+#### 2010
+
+::: {#tbl-f10 layout-align="center" tbl-pos="H"}
+```{=latex}
+
+\resizebox{\textwidth}{!}{
+\begin{tabular}{l r r r r r r}
+        \hline
+        \textbf{Grupo CID-10} & \textbf{menor que 5} & \textbf{5 a 14 anos} & \textbf{15 a 39 anos} & \textbf{40 a 59 anos} & \textbf{60 anos e mais} & \textbf{Total} \\
+        \hline
+        Neoplasias malignas & 0 & 0 & 7 & 40 & 64 & 111 \\
+        Doenças cerebrovasculares & 0 & 0 & 3 & 6 & 38 & 47 \\
+        Influenza [gripe] e pneumonia & 1 & 0 & 2 & 3 & 29 & 35 \\
+        Diabetes mellitus & 0 & 0 & 0 & 2 & 31 & 33 \\
+        Outras formas de doença do coração & 0 & 0 & 3 & 6 & 23 & 32 \\
+        Doenças isquêmicas do coração & 0 & 0 & 1 & 5 & 23 & 29 \\
+        Doenças crônicas das vias aéreas inferiores & 0 & 0 & 0 & 3 & 24 & 27 \\
+        Doenças hipertensivas & 0 & 0 & 0 & 2 & 18 & 20 \\
+        Acidentes & 1 & 0 & 8 & 4 & 4 & 17 \\
+        Outras doenças bacterianas & 1 & 0 & 3 & 3 & 5 & 12 \\
+        Insuficiência renal & 0 & 0 & 0 & 2 & 9 & 11 \\
+        Distúrbios metabólicos & 0 & 0 & 0 & 0 & 9 & 9 \\
+        Doenças das artérias, das arteríolas e capilares & 0 & 0 & 1 & 2 & 6 & 9 \\
+        Doenças infecciosas intestinais & 0 & 1 & 0 & 2 & 4 & 7 \\
+        Outras doenças respirat q afetam princ interstício & 0 & 0 & 0 & 3 & 4 & 7 \\
+        Doenças do fígado & 0 & 0 & 1 & 4 & 2 & 7 \\
+        Outras doenças do aparelho digestivo & 0 & 0 & 1 & 1 & 5 & 7 \\
+        Doença pelo vírus da imunodeficiência humana [HIV] & 0 & 0 & 1 & 5 & 0 & 6 \\
+        Outras doenças degenerativas do sistema nervoso & 0 & 0 & 0 & 0 & 6 & 6 \\
+        Transt vesícula biliar, vias biliares e pâncreas & 0 & 0 & 0 & 3 & 3 & 6 \\
+        \hline
+        \textbf{Total} & \textbf{3} & \textbf{1} & \textbf{31} & \textbf{96} & \textbf{307} & \textbf{438} \\
+        \hline
+    \end{tabular}
+}
+
+```
+Distribuição por Grupo CID-10 e faixa etária em mulheres no período de 2010
+:::
+
+::: {#tbl-m10 layout-align="center" tbl-pos="H"}
+```{=latex}
+
+\resizebox{\textwidth}{!}{
+        \begin{tabular}{l r r r r r r}
+            \hline
+            \textbf{Grupo CID-10} & \textbf{menor que 5} & \textbf{5 a 14 anos} & \textbf{15 a 39 anos} & \textbf{40 a 59 anos} & \textbf{60 anos e mais} & \textbf{Total} \\
+            \hline
+            Neoplasias malignas & 0 & 0 & 8 & 32 & 72 & 112 \\
+            Acidentes & 2 & 3 & 33 & 19 & 10 & 67 \\
+            Doenças cerebrovasculares & 0 & 1 & 2 & 13 & 44 & 60 \\
+            Doenças isquêmicas do coração & 0 & 0 & 4 & 20 & 34 & 58 \\
+            Agressões & 0 & 3 & 47 & 6 & 1 & 57 \\
+            Doenças crônicas das vias aéreas inferiores & 0 & 0 & 0 & 2 & 26 & 28 \\
+            Doenças do fígado & 0 & 0 & 7 & 12 & 8 & 27 \\
+            Diabetes mellitus & 0 & 0 & 1 & 9 & 14 & 24 \\
+            Outras formas de doença do coração & 0 & 0 & 1 & 6 & 16 & 23 \\
+            Influenza [gripe] e pneumonia & 1 & 0 & 1 & 3 & 15 & 20 \\
+            Eventos (fatos) cuja intenção é indeterminada & 0 & 0 & 12 & 3 & 2 & 17 \\
+            Doenças hipertensivas & 0 & 0 & 0 & 1 & 15 & 16 \\
+            Insuficiência renal & 0 & 0 & 3 & 2 & 8 & 13 \\
+            Outras doenças bacterianas & 2 & 0 & 3 & 2 & 4 & 11 \\
+            Transt ment e comport dev ao uso subst psicoativa & 0 & 0 & 3 & 5 & 3 & 11 \\
+            Doenças das artérias, arteríolas e capilares & 0 & 0 & 0 & 1 & 8 & 9 \\
+            Distúrbios metabólicos & 1 & 0 & 0 & 4 & 3 & 8 \\
+            Outras doenças resp. afet. interstício & 0 & 0 & 0 & 6 & 2 & 8 \\
+            Lesões autoprovocadas intencionalmente & 0 & 0 & 5 & 1 & 1 & 7 \\
+            Transt vesícula biliar, vias biliares e pâncreas & 0 & 0 & 0 & 6 & 0 & 6 \\
+            \hline
+            \textbf{Total} & \textbf{6} & \textbf{7} & \textbf{130} & \textbf{153} & \textbf{286} & \textbf{582} \\
+            \hline
+        \end{tabular}
+    }
+
+```
+Distribuição por Grupo CID-10 e faixa etária em homens no período de 2010
+:::
+
+Analisando a [@tbl-f10] e a [@tbl-m10] conjuntamente, é possível observar que em ambos os sexos a causa de fatalidade mais comum em 2010 foram as "Neoplasias malignas" que foram responsáveis por 223 óbitos neste ano. Vale a pena destacar também as "doenças cerebrovasculares" (107 óbitos) que, similarmante às neoplasias, aparecem nas 3 causas mais comuns, sendo a segunda no caso do sexo feminino. Outros grupos tais como "Acidentes" (84 óbitos); "Diabetes mellitus" (57 óbitos): "Transt vesícula biliar, vias biliares e pâncreas" aparecem" (12 óbitos) e outros agrupamentos, aparecem nos dois sexos, esse último sendo o 20ª grupo em ambos os casos.
+
+Em contrapartida, os grupos "Doenças infecciosas intestinais" (7 óbitos), "Outras doenças do aparelho digestivo" (7 óbitos), "Doença pelo vírus da imunodeficiência humana [HIV]" (6 óbitos) e "Outras doenças degenerativas do sistema nervoso" (6 óbitos) somente aparecem entre os 20 mais comuns no caso do sexo feminino. De maneira semelhante, os grupos "Agressões" (57 óbitos), "Eventos (fatos) cuja intenção é indeterminada" (17 óbitos), "Transt ment e comport dev ao uso subst psicoativa" (11 óbitos) e "Lesões autoprovocadas intencionalmente" (7 óbitos) aparecem só nos indivíduos do sexo masculino.
+
+Por fim, nota-se que em todas as faixas etárias analisadas, somente as mulheres com 60 ou mais anos faleceram mais que os homens, 307 a 286, respectivamente, no ano de 2010. Desse modo, os homens apresentaram 144 mortes daqueles 20 agrupamentos mais comuns durante todo o ano em análise.
+
+#### 2021
+
+::: {#tbl-f21 layout-align="center" tbl-pos="H"}
+```{=latex}
+
+\resizebox{\textwidth}{!}{
+        \begin{tabular}{l r r r r r r}
+            \hline
+            \textbf{Grupo CID-10} & \textbf{menor que 5} & \textbf{5 a 14 anos} & \textbf{15 a 39 anos} & \textbf{40 a 59 anos} & \textbf{60 anos e mais} & \textbf{Total} \\
+            \hline
+            Outras doenças por vírus & 0 & 0 & 5 & 48 & 186 & 239 \\
+            Neoplasias malignas & 0 & 3 & 11 & 24 & 99 & 137 \\
+            Doenças cerebrovasculares & 0 & 0 & 0 & 7 & 52 & 59 \\
+            Outras formas de doença do coração & 0 & 0 & 2 & 6 & 50 & 58 \\
+            Diabetes mellitus & 0 & 0 & 1 & 8 & 36 & 45 \\
+            Influenza [gripe] e pneumonia & 0 & 0 & 0 & 3 & 36 & 39 \\
+            Doenças isquêmicas do coração & 0 & 0 & 0 & 6 & 32 & 38 \\
+            Doenças hipertensivas & 0 & 0 & 0 & 7 & 28 & 35 \\
+            Acidentes & 0 & 0 & 2 & 4 & 18 & 24 \\
+            Outras doenças do aparelho urinário & 0 & 0 & 0 & 0 & 16 & 16 \\
+            Outras doenças degenerativas do sistema nervoso & 0 & 0 & 0 & 0 & 15 & 15 \\
+            Outras doenças bacterianas & 0 & 0 & 0 & 2 & 10 & 12 \\
+            Doenças crônicas das vias aéreas inferiores & 0 & 0 & 0 & 1 & 10 & 11 \\
+            Outras doenças do aparelho digestivo & 0 & 0 & 1 & 1 & 8 & 10 \\
+            Transt vesícula biliar, vias biliares e pâncreas & 0 & 0 & 0 & 1 & 8 & 9 \\
+            Doenças do fígado & 0 & 0 & 0 & 3 & 5 & 8 \\
+            Fet rec-nasc afet fat mat e compl grav, trab parto & 7 & 0 & 0 & 0 & 0 & 7 \\
+            Obesidade e outras formas de hiperalimentação & 0 & 0 & 2 & 1 & 2 & 5 \\
+            Doenças cardíaca pulmonar e da circulação pulmo & 0 & 0 & 1 & 1 & 3 & 5 \\
+            Outras doenças do aparelho respiratório & 0 & 0 & 1 & 0 & 4 & 5 \\
+            \hline
+            \textbf{Total} & \textbf{7} & \textbf{3} & \textbf{26} & \textbf{123} & \textbf{618} & \textbf{777} \\
+            \hline
+        \end{tabular}
+    }
+
+```
+Distribuição por Grupo CID-10 e faixa etária em mulheres no período de 2021
+:::
+
+::: {#tbl-m21 layout-align="center" tbl-pos="H"}
+```{=latex}
+
+\resizebox{\textwidth}{!}{
+        \begin{tabular}{l r r r r r r}
+            \hline
+            \textbf{Grupo CID-10} & \textbf{menor que 5} & \textbf{5 a 14 anos} & \textbf{15 a 39 anos} & \textbf{40 a 59 anos} & \textbf{60 anos e mais} & \textbf{Total} \\
+            \hline
+            Outras doenças por vírus & 0 & 0 & 13 & 63 & 255 & 331 \\
+            Neoplasias malignas & 0 & 1 & 7 & 23 & 99 & 130 \\
+            Doenças cerebrovasculares & 0 & 0 & 2 & 6 & 54 & 62 \\
+            Outras formas de doença do coração & 0 & 0 & 3 & 10 & 45 & 58 \\
+            Acidentes & 1 & 0 & 14 & 12 & 24 & 51 \\
+            Diabetes mellitus & 0 & 0 & 0 & 11 & 38 & 49 \\
+            Influenza [gripe] e pneumonia & 0 & 0 & 1 & 6 & 40 & 47 \\
+            Doenças hipertensivas & 0 & 0 & 1 & 11 & 31 & 43 \\
+            Doenças isquêmicas do coração & 0 & 0 & 0 & 7 & 25 & 32 \\
+            Agressões & 0 & 0 & 20 & 8 & 0 & 28 \\
+            Doenças do fígado & 0 & 0 & 0 & 8 & 12 & 20 \\
+            Doenças crônicas das vias aéreas inferiores & 0 & 0 & 1 & 0 & 18 & 19 \\
+            Outras doenças do aparelho urinário & 0 & 0 & 0 & 2 & 14 & 16 \\
+            Outras doenças bacterianas & 0 & 0 & 0 & 2 & 10 & 12 \\
+            Outras doenças degenerativas do sistema nervoso & 0 & 0 & 0 & 1 & 11 & 12 \\
+            Doenças cardíaca pulmonar e da circulação pulmonar & 0 & 0 & 0 & 2 & 9 & 11 \\
+            Infecções da pele e do tecido subcutâneo & 0 & 0 & 0 & 4 & 4 & 8 \\
+            Lesões autoprovocadas intencionalmente & 0 & 0 & 4 & 3 & 1 & 8 \\
+            Eventos (fatos) cuja intenção é indeterminada & 0 & 0 & 4 & 3 & 1 & 8 \\
+            Outras doenças do aparelho digestivo & 0 & 0 & 0 & 1 & 6 & 7 \\
+            \hline
+            \textbf{Total} & \textbf{1} & \textbf{1} & \textbf{70} & \textbf{183} & \textbf{697} & \textbf{952} \\
+            \hline
+        \end{tabular}
+    }
+
+```
+Distribuição por Grupo CID-10 e faixa etária em homens no período de 2021
+:::
+
+
+
+#### 2024
+
+::: {#tbl-f24 layout-align="center" tbl-pos="H"}
+```{=latex}
+
+\resizebox{\textwidth}{!}{
+        \begin{tabular}{l r r r r r r}
+            \hline
+            \textbf{Grupo CID-10} & \textbf{menor que 5} & \textbf{5 a 14 anos} & \textbf{15 a 39 anos} & \textbf{40 a 59 anos} & \textbf{60 anos e mais} & \textbf{Total} \\
+            \hline
+            Neoplasias malignas & 0 & 1 & 5 & 37 & 89 & 132 \\
+            Diabetes mellitus & 0 & 0 & 1 & 11 & 60 & 72 \\
+            Influenza [gripe] e pneumonia & 0 & 1 & 0 & 2 & 62 & 65 \\
+            Doenças hipertensivas & 0 & 0 & 0 & 1 & 57 & 58 \\
+            Doenças isquêmicas do coração & 0 & 0 & 1 & 7 & 49 & 57 \\
+            Doenças cerebrovasculares & 0 & 0 & 1 & 4 & 46 & 51 \\
+            Outras doenças degenerativas do sistema nervoso & 0 & 0 & 0 & 0 & 27 & 27 \\
+            Outras formas de doença do coração & 0 & 0 & 0 & 2 & 24 & 26 \\
+            Acidentes & 3 & 1 & 0 & 8 & 13 & 25 \\
+            Outras doenças do aparelho urinário & 0 & 0 & 0 & 0 & 24 & 24 \\
+            Doenças crônicas das vias aéreas inferiores & 0 & 1 & 0 & 1 & 19 & 21 \\
+            Outras doenças bacterianas & 0 & 0 & 0 & 1 & 17 & 18 \\
+            Doenças do fígado & 0 & 0 & 0 & 3 & 9 & 12 \\
+            Alguns transt q comprometem o mecanismo imunitário & 0 & 0 & 0 & 0 & 10 & 10 \\
+            Outras doenças resp. afet. interstício & 0 & 0 & 0 & 1 & 7 & 8 \\
+            Transt vesícula biliar, vias biliares e pâncreas & 0 & 0 & 1 & 0 & 7 & 8 \\
+            Outras doenças do aparelho digestivo & 1 & 0 & 0 & 0 & 7 & 8 \\
+            Insuficiência renal & 0 & 0 & 1 & 1 & 6 & 8 \\
+            Agressões & 0 & 0 & 5 & 1 & 2 & 8 \\
+            Causas mal def. e desconhecidas de mortalidade & 0 & 0 & 1 & 2 & 4 & 7 \\
+            \hline
+            \textbf{Total} & \textbf{4} & \textbf{4} & \textbf{16} & \textbf{82} & \textbf{539} & \textbf{645} \\
+            \hline
+        \end{tabular}
+    }
+
+```
+Distribuição por Grupo CID-10 e faixa etária em mulheres no período de 2024
+:::
+
+::: {#tbl-m24 layout-align="center" tbl-pos="H"}
+```{=latex}
+
+\resizebox{\textwidth}{!}{
+        \begin{tabular}{l r r r r r r}
+            \hline
+            \textbf{Grupo CID-10} & \textbf{menor que 5} & \textbf{5 a 14 anos} & \textbf{15 a 39 anos} & \textbf{40 a 59 anos} & \textbf{60 anos e mais} & \textbf{Total} \\
+            \hline
+            Neoplasias malignas & 0 & 0 & 5 & 37 & 146 & 188 \\
+            Influenza [gripe] e pneumonia & 0 & 0 & 2 & 9 & 73 & 84 \\
+            Acidentes & 0 & 2 & 16 & 17 & 29 & 64 \\
+            Doenças cerebrovasculares & 0 & 0 & 2 & 9 & 50 & 61 \\
+            Doenças isquêmicas do coração & 0 & 0 & 0 & 8 & 49 & 57 \\
+            Doenças hipertensivas & 0 & 0 & 0 & 12 & 41 & 53 \\
+            Diabetes mellitus & 0 & 0 & 0 & 14 & 37 & 51 \\
+            Agressões & 0 & 0 & 36 & 9 & 0 & 45 \\
+            Outras formas de doença do coração & 0 & 0 & 2 & 5 & 24 & 31 \\
+            Doenças do fígado & 0 & 0 & 1 & 8 & 16 & 25 \\
+            Doenças crônicas das vias aéreas inferiores & 0 & 0 & 0 & 2 & 16 & 18 \\
+            Febres por arbovírus e febres hemorrágicas virais & 0 & 0 & 1 & 2 & 12 & 15 \\
+            Transt ment e comport dev ao uso subst psicoativa & 0 & 0 & 2 & 8 & 4 & 14 \\
+            Outras doenças degenerativas do sistema nervoso & 0 & 0 & 1 & 0 & 13 & 14 \\
+            Outras doenças do aparelho urinário & 0 & 0 & 0 & 2 & 12 & 14 \\
+            Causas mal def. e desconhecidas de mortalidade & 0 & 0 & 1 & 7 & 6 & 14 \\
+            Outras doenças bacterianas & 1 & 0 & 1 & 1 & 9 & 12 \\
+            Doenças pulmonares devidas a agentes externos & 0 & 0 & 1 & 1 & 10 & 12 \\
+            Lesões autoprovocadas intencionalmente & 0 & 0 & 8 & 4 & 0 & 12 \\
+            Insuficiência renal & 0 & 0 & 0 & 1 & 10 & 11 \\
+            Outras doenças por vírus & 0 & 0 & 0 & 1 & 2 & 3 \\
+            \hline
+            \textbf{Total} & \textbf{1} & \textbf{2} & \textbf{79} & \textbf{157} & \textbf{559} & \textbf{798} \\
+            \hline
+        \end{tabular}
+    }
+
+```
+Distribuição por Grupo CID-10 e faixa etária em homens no período de 2024
+:::
 
 ## Análise 2
 
