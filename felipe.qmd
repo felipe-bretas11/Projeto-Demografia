@@ -318,7 +318,7 @@ Taxa de Mortalidade Infantil (TMI) por sexo em 2023
 
 Observa-se pela [@tbl-TMI] que a taxa de mortalidade infantil ($TMI$) em 2023 para o sexo masculino se encontra um pouco maior do que o sexo feminino, com uma diferença de 0,488297.
 
-Com essa informação, aliado com as taxas de específicas de mortalidade calculadas ($nMx$) no item a e que serão recordadas a seguir, as Tábuas de Vida forão confecciondas separadas pelos anos em análise, 2010 e 2024, e por sexo, masculinino e feminino. Ademais, para uma melhor visualização, as Tábuas de Vida serão separadas por ano.
+Com essa informação, aliado com as taxas de específicas de mortalidade calculadas ($nMx$) no item a e que serão recordadas a seguir, as Tábuas de Vida forão confeccionadas separadas pelos anos em análise, 2010 e 2024, e por sexo, masculino e feminino. Ademais, para uma melhor visualização, as Tábuas de Vida serão separadas por ano.
 
 ::: {#tbl-nMxf layout-align="center" tbl-pos="H"}
 ```{=latex}
@@ -462,8 +462,8 @@ Tábua de Vida - Sexo Masculino (2010)
         \textbf{Sexo} & \textbf{Idade (anos)} & \textbf{IBGE} & \textbf{GBD} \\
         \hline
         Mulheres & 0  & 78,33 & 79,52 \\
-        Mulheres & 60 & 23,37 & 54,03 \\
         Homens   & 0  & 71,34 & 72,84 \\
+        Mulheres & 60 & 23,37 & 24,03 \\
         Homens   & 60 & 20,05 & 20,86 \\
         \hline
     \end{tabular}
@@ -471,6 +471,16 @@ Tábua de Vida - Sexo Masculino (2010)
 ```
 Esperança de Vida por Sexo e Idade em Minas Gerais (IBGE x GBD) - 2010
 :::
+
+A partir da [@tbl-est2010], esta que contém os dados sobre as projeções realizadas pelo IBGE em 2024 e o estudo GBD com valores de esperança de vida para as idades exatas 0 e 60, ambos para o estado de Minas Gerais. Apesar dos valores encontrados para o estado como um todo, eles serão utilizados como uma estimativa para os valores obtidos para o município de Ipatinga. 
+
+Dessa maneira, a [@tbl-tvf10] e a [@tbl-tvm10] é possível observar que para idade simples 0 são encontrados os valores 73,84 para homens e 80,11 para mulheres e, analisando sobre a ótica do estudo confeccionado pelo GBD e pelas Projeções, se assemelham com o do município de Ipatinga.
+
+Já para a idade simples 60, indivíduos do sexo masculino apresentam uma esperança da vida igual a 22,31 e 24,45 para o sexo feminino. Semelhantemente ao ocorrido para a idade simples 0, as estimativas encontradas na Tábua de Vida estão próximas aos valores de esperança de vida dos estudos do GBD e IBGE estão, mas com os homens apresentando 2 unidades acima dos estudos aproximadamente.
+
+Analisando as Tábuas mais especificamente, é notável que para as mulheres a probabilidade de sobreviver entre a idade $x$ e $x+n$ somente abaixa de 0,91 para pessoas com idade entre 70 a 74 anos, decaindo de 0,99 após a faixa de 40 a 44 anos da vida. Em contrapartida, as pessoas do sexo masculino já decaem de 0,90 na faixa de 65 a 69 anos adiante, com um valor abaixo à 0,80 na faixa entre 75 a 79 anos.
+
+Nesse último caso vale a pena ser mencionado que, por não ter ocorrido mortes relatadas em 2010 para a faixa etária 10 a 14 anos no sexo feminino, as probabilidades calculadas após essa faixa podem não condizer completamente com a realidade. 
 
 #### 2024
 
@@ -559,6 +569,14 @@ Tábua de Vida - Sexo Masculino (2024)
 ```
 Esperança de Vida por Sexo e Idade em Minas Gerais (IBGE x GBD) - 2024
 :::
+
+A [@tbl-tvf24] mostra um aumento em comparação ao ano de 2010, saltando uma unidade, chegando à 81,45 para idade menor que 1 e se mantendo acima dos 81 de esperança de para a faixa de 1 a 4 anos para as mulheres que vivem em Ipatinga. Agregado a isso, nota-se que a probabilidade de morte entre a idade $x$ e $x+n$ ultrapassa 0,1 somente na faixa etária entre 75 a 79 anos.
+
+Além disso, a [@tbl-tvm24] mostra um aumento de 1 unidade de esperança de vida para a menores que 1 ano de vida, com valor próximo aos 75 anos, com um valor de 74,64 para a faixa etária entre 1 a 4 anos, decaindo 0,3 só quando comparados aos de idade simples 0. Aliado a esse decrescimento, a probabilidade de sobreviver entre a idade $x$ e $x+n$ cai para um valor abaixo de 0,90 após a faixa de 60 a 64 anos, mas se mantendo acima dos 0,80 na faixa de 75 a 79 anos, diferentemente do valor obtido em 2010.
+
+Quando comparado aos valores obtidos na [@tbl-est2024] para a idade simples 0, as estimativas para os municípios se assemelham a aquelas encontradas no estudo GBD e na Projeção realizada pelo IBGE, com as mulheres ultrapassando ambos valores encontrados para os estudos. De maneira semelhante, os valores encontrados para pessoas do sexo masculino são próximos aos estudos, mas nessa ocasião, o estudo GBD aponta um valor de 75,05 de esperança de vida, enquanto o valor da estimativa fica um pouco abaixo de 75.
+
+Analisando sobre a perspectiva da idade simples 60, as senhoras moradoras da Ipatinga apresentam uma esperança de vida maior do que os estudos apontam para o estado de Minas Gerais, com esperança de vida de 25,40. Já para os homens, o mesmo ocorre, com valor da estimativa para a faixa de 60 a 64 maiores do que aquelas apresentadas em ambos os estudos.
 
 ```{r}
 #| label: fig-
