@@ -29,7 +29,7 @@ Foram encontradas nenhuma observação, tanto no Tabnet - Datasus quanto no banc
 
 ### Letra c
 
-A fim de comparar as estruturas de mortalidade por causas entre os anos de 2010, 2021 e 2024, a seguinte análise utilizará os agrupamentos do CID-10, retirando os 20 grupos mais frequentes ems seus respectivos anos. Assim, o estudo será analisado sobre os grupos etários (menor que 5; 5 a 14 anos; 15 a 39 anos; 40 a 59 anos; 60 anos e mais), dando foco para a Covid-19 nos anos em que ela existiam sendo acrescentado um 21º grupo caso não apareça entre os 20 mais comuns.
+A fim de comparar as estruturas de mortalidade por causas entre os anos de 2010, 2021 e 2024, a seguinte análise utilizará os agrupamentos do CID-10, retirando os 20 grupos mais frequentes em seus respectivos anos. Assim, o estudo será analisado sobre os grupos etários (menor que 5; 5 a 14 anos; 15 a 39 anos; 40 a 59 anos; 60 anos e mais), dando foco para a Covid-19 nos anos em que ela existia sendo acrescentada um 21º grupo caso não apareça entre os 20 mais comuns.
 
 Para melhor visualização dos dados o estudo será segmentado nos anos comentados anteriormente, a fim de comparar as diferentes estruturas entre os sexos feminino e masculino.
 
@@ -111,7 +111,7 @@ Distribuição por Grupo CID-10 e faixa etária em mulheres no período de 2010
 Distribuição por Grupo CID-10 e faixa etária em homens no período de 2010
 :::
 
-Analisando a [@tbl-f10] e a [@tbl-m10] conjuntamente, é possível observar que em ambos os sexos a causa de fatalidade mais comum em 2010 foram as "Neoplasias malignas" que foram responsáveis por 223 óbitos neste ano. Vale a pena destacar também as "doenças cerebrovasculares" (107 óbitos) que, similarmante às neoplasias, aparecem nas 3 causas mais comuns, sendo a segunda no caso do sexo feminino. Outros grupos tais como "Acidentes" (84 óbitos); "_Diabetes mellitus_" (57 óbitos): "Transt vesícula biliar, vias biliares e pâncreas" aparecem" (12 óbitos) e outros agrupamentos, aparecem nos dois sexos, esse último sendo o 20ª grupo em ambos os casos.
+Analisando a [@tbl-f10] e a [@tbl-m10] conjuntamente, é possível observar que em ambos os sexos a causa de fatalidade mais comum em 2010 foram as "Neoplasias malignas" que foram responsáveis por 223 óbitos neste ano. Vale a pena destacar também as "doenças cerebrovasculares" (107 óbitos) que, similarmente às neoplasias, aparecem nas 3 causas mais comuns, sendo a segunda no caso do sexo feminino. Outros grupos tais como "Acidentes" (84 óbitos); "_Diabetes mellitus_" (57 óbitos): "Transt vesícula biliar, vias biliares e pâncreas" aparecem" (12 óbitos) e outros agrupamentos, aparecem nos dois sexos, esse último sendo o 20ª grupo em ambos os casos.
 
 Em contrapartida, os grupos "Doenças infecciosas intestinais" (7 óbitos), "Outras doenças do aparelho digestivo" (7 óbitos), "Doença pelo vírus da imunodeficiência humana [HIV]" (6 óbitos) e "Outras doenças degenerativas do sistema nervoso" (6 óbitos) somente aparecem entre os 20 mais comuns no caso do sexo feminino. De maneira semelhante, os grupos "Agressões" (57 óbitos), "Eventos (fatos) cuja intenção é indeterminada" (17 óbitos), "Transt ment e comport dev ao uso subst psicoativa" (11 óbitos) e "Lesões autoprovocadas intencionalmente" (7 óbitos) aparecem só nos indivíduos do sexo masculino.
 
@@ -196,7 +196,7 @@ Distribuição por Grupo CID-10 e faixa etária em homens no período de 2021
 :::
 
 Observando a [@tbl-f21] e a [@tbl-m21], o grupo de morte mais comum foi "Outras doenças por vírus" que representa a Covid-19, totalizando 570 fatalidades somente no ano de 2021, se aproximando do número de óbitos para os homens em 2010 (582). Logo em sequência, "Neoplasias malignas" e "Doenças cerebrovasculares
-", 267 e 121 mortes respectivamente,  se mantiveram no top 3 grupos mais frequentes mesmo após 11 anos de diferença entre os anos em análise. Além disso, grupos como "Outras formas de doença do coração" (116 óbitos), "_Diabetes mellitus_" (94 óbitos), "Acidentes" (75 óbitos) e outros grupos apareceram em ambos sexos.
+", 267 e 121 mortes respectivamente, se mantiveram no top 3 grupos mais frequentes mesmo após 11 anos de diferença entre os anos em análise. Além disso, grupos como "Outras formas de doença do coração" (116 óbitos), "_Diabetes mellitus_" (94 óbitos), "Acidentes" (75 óbitos) e outros grupos apareceram em ambos sexos.
 
 Entretanto, os grupos "Outras doenças do aparelho respiratório" (5 óbitos), "Transt vesícula biliar, vias biliares e pâncreas" (9 óbitos), "Fet rec-nasc afet fat mat e compl grav, trab parto" (7 óbitos), "Outras doenças degenerativas do sistema nervoso" (6 óbitos) e "Obesidade e outras formas de hiperalimentação" (5 óbitos) somente aparecem entre os 20 mais comuns no caso do sexo feminino. De maneira semelhante, os grupos "Agressões" (28 óbitos), "Eventos (fatos) cuja intenção é indeterminada" (8 óbitos), "Infecções da pele e do tecido subcutâneo" (8 óbitos) e "Lesões autoprovocadas intencionalmente" (8 óbitos) aparecem só nos indivíduos do sexo masculino.
 
@@ -280,6 +280,12 @@ Distribuição por Grupo CID-10 e faixa etária em mulheres no período de 2024
 ```
 Distribuição por Grupo CID-10 e faixa etária em homens no período de 2024
 :::
+
+Observa-se pela [@tbl-f24] e pela [@tbl-m24] que a Covid-19 decaiu do primeiro lugar entre os dois sexos no ano de 2024, somente aparecendo para indivíduos do sexo masculino (3 óbitos) e não frequentando o top 20, sendo acrescentado posteriormente. Dessa maneira, as "Neoplasias malignas" retornaram ao primeiro lugar com 320 fatalidades entre ambos os sexos, com "Influenza [gripe] e pneumonia" aparecendo entre os 3 grupos mais comuns com 112 mortes.
+
+Porém, os grupos "Alguns transt q comprometem o mecanismo imunitário" (10 óbitos), "Outras doenças respirat q afetam princ interstício" (8 óbitos), "Transt vesícula biliar, vias biliares e pâncreas" (8 óbitos), "Outras doenças do aparelho digestivo" (8 óbitos) somente aparecem entre os 20 mais comuns no caso do sexo feminino. De maneira semelhante, os grupos "Febres por arbovírus e febres hemorrágicas virais" (15 óbitos), "Transt ment e comport dev ao uso subst psicoativa" (14 óbitos), "Doenças pulmonares devidas a agentes externos" (12 óbitos) e "Lesões autoprovocadas intencionalmente" (12 óbitos) além do já mencionado "Outras doenças por vírus" (3 óbitos) que representa a Covid-19, aparecem só nos indivíduos do sexo masculino.
+
+Por fim, como ocorrido no ano de 2021, as meninas com idades menores que 5 anos e entre 5 a 14 anos de vida, 4 e 4 respectivamente, faleceram mais que os meninos na mesma faixa etária, 1 e 2 respectivamente, com as demais faixas os indivíduos do sexo masculino morreram com maior frequência, 79, 157 e 559 respectivamente. Há uma diferença de 153 homens falecendo a mais que as mulheres no ano em questão.
 
 ## Análise 2
 
