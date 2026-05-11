@@ -287,7 +287,14 @@ Porém, os grupos "Alguns transt q comprometem o mecanismo imunitário" (10 óbi
 
 Por fim, como ocorrido no ano de 2021, as meninas com idades menores que 5 anos e entre 5 a 14 anos de vida, 4 e 4 respectivamente, faleceram mais que os meninos na mesma faixa etária, 1 e 2 respectivamente, com as demais faixas os indivíduos do sexo masculino morreram com maior frequência, 79, 157 e 559 respectivamente. Há uma diferença de 153 homens falecendo a mais que as mulheres no ano em questão.
 
-## Análise 2
+#### Comparações entre os anos
+
+Analisando as pessoas do sexo feminino utilizando a [@tbl-f10], a [@tbl-f21] e a [@tbl-f24], é notável que o ano de 2021 foi o que apresentou mais óbitos totalizando 777, sendo que senhoras com 60 ou mais anos somente nesse ano faleceram mais que as mulheres no ano de 2010 e próximo ao ano 2024, com 618. Além disso, as "Neoplasias malignas" sempre estando entre os grupos mais frequentes. O grupo que representa "Agressões" somente foi relatado entre os 20 mais comuns no ano de 2024 com 8 óbitos. Os agrupamentos "Obesidade e outras formas de hiperalimentação", "Doenças cardíaca pulmonar e da circulação pulmonar" e "Outras doenças do aparelho respiratório" entre aqueles que apareceram em algum dos anos, foram os menos frequentes em um ano específico, com 5 óbitos reportados no ano de 2021.
+
+Ademais, estudando a [@tbl-m10], a [@tbl-m21] e a [@tbl-m24] que falam sobre os indivíduos do sexo masculino, semelhantemente aos grupos mais frequentes para as mulheres, o maior número de óbitos em um ano, com 952, foi no ano de 2021 e as "Neoplasias malignas" aparecendo sempre entre os grupos mais com maior número de mortes reportadas nos anos analisados. Diferentemente das mulheres, as "Agressões" apareceram em todos os anos em análise para os homens, com 130 ocorrências. Por fim, a Covid-19 apareceu em 2 anos como mencionado nas análises em cada ano individualmente somente para esse sexo, com 334 casos, mas somente 3 em 2024.
+
+
+### letra d
 
 ```{r}
 #| label: fig-
