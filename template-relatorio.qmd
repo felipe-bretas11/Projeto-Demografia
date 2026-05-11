@@ -1,8 +1,8 @@
 ---
-title: "Modelo Projeto - Quarto"
+title: "Estatísticas Vitais em Ipatinga - MG"
 
 # Nome do documento PDF gerado
-output-file: titulo do projeto
+output-file: trabalho_demografia_ipatinga
 ---
 
 ```{r}

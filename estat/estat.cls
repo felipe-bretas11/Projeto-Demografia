@@ -4,7 +4,7 @@
 % \ProvidesExplClass {estat} {2024/03/09} {0.1} {Standard estat class}
 
 % \DeclareOption*{\PassOptionsToClass{\CurrentOption{article}}}
-\DeclareOption*{\ClassWarning{estat}{\CurrentOption not declared!}}
+\DeclareOption*{\CalssWarning{estat}{\CurrentOption not declared!}}
 \ProcessOptions\relax
 
 % Select article as main class
@@ -83,30 +83,6 @@
 % \RequirePackage{fancyhdr} % Not really necessary
 
 \RequirePackage{xcolor}
-
-% estat colors
-\definecolor{estatRed}{HTML}{A11D21}
-\definecolor{estat1}{HTML}{A11D21}
-\definecolor{estat2}{HTML}{003366}
-\definecolor{estat3}{HTML}{CC9900}
-\definecolor{estat4}{HTML}{663333}
-\definecolor{estat5}{HTML}{FF6600}
-\definecolor{estat6}{HTML}{CC9966}
-\definecolor{estat7}{HTML}{999966}
-\definecolor{estat8}{HTML}{006606}
-\definecolor{estat9}{HTML}{008091}
-\definecolor{estat10}{HTML}{041835}
-\definecolor{estat11}{HTML}{666666}
-
-% listings colors
-\definecolor{black}{RGB}{0, 0, 0}
-\definecolor{backgroundCol}{rgb}{0.95, 0.95, 0.95}
-\definecolor{commentstyleCol}{rgb}{0.678, 0.584, 0.686}
-\definecolor{keywordstyleCol}{rgb}{0.737, 0.353, 0.396}
-\definecolor{stringstyleCol}{rgb}{0.192, 0.494, 0.8}
-\definecolor{NumCol}{rgb}{0.686, 0.059, 0.569}
-\definecolor{basicstyleCol}{rgb}{0.345, 0.345, 0.345}   
-
 
 \RequirePackage{listings}
 \lstset{ 
@@ -210,15 +186,7 @@ range-phrase = { \GetTranslation{to (numerical range)} },
 
 
 
-
-
-
 \renewcommand{\maketitle}{%
-% Title page background
-\AddToHookNext{shipout/background}{%
-    \put(0, 0){\makebox(0, 0)[tl]{\includegraphics[width=\paperwidth,height=\paperheight]{estat/imagens/capa.png}}}
-}
-
 \begin{tikzpicture}[remember picture, overlay]
     \begin{scope}[execute at begin scope={\linespread{3}}]
     \draw (current page.north) 
@@ -235,11 +203,6 @@ range-phrase = { \GetTranslation{to (numerical range)} },
         \draw (0,0) ++(\textwidth,0) ++(-1cm,-10cm) 
         node(exec) {\textbf{Consultores Responsáveis:}\\ \@authors}
         node[below= of exec] {\textbf{Requerente:}\\ \@client};
-    \end{scope}
-
-    \begin{scope}[node distance=0.25cm]
-        \draw (current page.south) node(logo)[anchor=south] at +(0, 3cm){\includegraphics[height=1.5cm]{estat/imagens/estat.png}};
-        \node(date)[above= of logo, align=flush center]{Brasília, \today.};
     \end{scope}
 \end{tikzpicture}
 
@@ -268,10 +231,7 @@ range-phrase = { \GetTranslation{to (numerical range)} },
 %   \renewcommand{\figurename}{Figura}
 % }
 
-% Default page background
-\AddToHook{shipout/background}{
-    \put(0, 0){\makebox(0, 0)[tl]{\includegraphics[width=\paperwidth,height=\paperheight]{estat/imagens/pagina-comum.png}}}
-}
+
 
 
 
