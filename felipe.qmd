@@ -46,7 +46,7 @@ Para melhor visualização dos dados o estudo será segmentado nos anos comentad
         Neoplasias malignas & 0 & 0 & 7 & 40 & 64 & 111 \\
         Doenças cerebrovasculares & 0 & 0 & 3 & 6 & 38 & 47 \\
         Influenza [gripe] e pneumonia & 1 & 0 & 2 & 3 & 29 & 35 \\
-        Diabetes mellitus & 0 & 0 & 0 & 2 & 31 & 33 \\
+        \textit{Diabetes mellitus} & 0 & 0 & 0 & 2 & 31 & 33 \\
         Outras formas de doença do coração & 0 & 0 & 3 & 6 & 23 & 32 \\
         Doenças isquêmicas do coração & 0 & 0 & 1 & 5 & 23 & 29 \\
         Doenças crônicas das vias aéreas inferiores & 0 & 0 & 0 & 3 & 24 & 27 \\
@@ -88,7 +88,7 @@ Distribuição por Grupo CID-10 e faixa etária em mulheres no período de 2010
             Agressões & 0 & 3 & 47 & 6 & 1 & 57 \\
             Doenças crônicas das vias aéreas inferiores & 0 & 0 & 0 & 2 & 26 & 28 \\
             Doenças do fígado & 0 & 0 & 7 & 12 & 8 & 27 \\
-            Diabetes mellitus & 0 & 0 & 1 & 9 & 14 & 24 \\
+            \textit{Diabetes mellitus} & 0 & 0 & 1 & 9 & 14 & 24 \\
             Outras formas de doença do coração & 0 & 0 & 1 & 6 & 16 & 23 \\
             Influenza [gripe] e pneumonia & 1 & 0 & 1 & 3 & 15 & 20 \\
             Eventos (fatos) cuja intenção é indeterminada & 0 & 0 & 12 & 3 & 2 & 17 \\
@@ -111,7 +111,7 @@ Distribuição por Grupo CID-10 e faixa etária em mulheres no período de 2010
 Distribuição por Grupo CID-10 e faixa etária em homens no período de 2010
 :::
 
-Analisando a [@tbl-f10] e a [@tbl-m10] conjuntamente, é possível observar que em ambos os sexos a causa de fatalidade mais comum em 2010 foram as "Neoplasias malignas" que foram responsáveis por 223 óbitos neste ano. Vale a pena destacar também as "doenças cerebrovasculares" (107 óbitos) que, similarmante às neoplasias, aparecem nas 3 causas mais comuns, sendo a segunda no caso do sexo feminino. Outros grupos tais como "Acidentes" (84 óbitos); "Diabetes mellitus" (57 óbitos): "Transt vesícula biliar, vias biliares e pâncreas" aparecem" (12 óbitos) e outros agrupamentos, aparecem nos dois sexos, esse último sendo o 20ª grupo em ambos os casos.
+Analisando a [@tbl-f10] e a [@tbl-m10] conjuntamente, é possível observar que em ambos os sexos a causa de fatalidade mais comum em 2010 foram as "Neoplasias malignas" que foram responsáveis por 223 óbitos neste ano. Vale a pena destacar também as "doenças cerebrovasculares" (107 óbitos) que, similarmante às neoplasias, aparecem nas 3 causas mais comuns, sendo a segunda no caso do sexo feminino. Outros grupos tais como "Acidentes" (84 óbitos); "_Diabetes mellitus_" (57 óbitos): "Transt vesícula biliar, vias biliares e pâncreas" aparecem" (12 óbitos) e outros agrupamentos, aparecem nos dois sexos, esse último sendo o 20ª grupo em ambos os casos.
 
 Em contrapartida, os grupos "Doenças infecciosas intestinais" (7 óbitos), "Outras doenças do aparelho digestivo" (7 óbitos), "Doença pelo vírus da imunodeficiência humana [HIV]" (6 óbitos) e "Outras doenças degenerativas do sistema nervoso" (6 óbitos) somente aparecem entre os 20 mais comuns no caso do sexo feminino. De maneira semelhante, os grupos "Agressões" (57 óbitos), "Eventos (fatos) cuja intenção é indeterminada" (17 óbitos), "Transt ment e comport dev ao uso subst psicoativa" (11 óbitos) e "Lesões autoprovocadas intencionalmente" (7 óbitos) aparecem só nos indivíduos do sexo masculino.
 
@@ -131,7 +131,7 @@ Por fim, nota-se que em todas as faixas etárias analisadas, somente as mulheres
             Neoplasias malignas & 0 & 3 & 11 & 24 & 99 & 137 \\
             Doenças cerebrovasculares & 0 & 0 & 0 & 7 & 52 & 59 \\
             Outras formas de doença do coração & 0 & 0 & 2 & 6 & 50 & 58 \\
-            Diabetes mellitus & 0 & 0 & 1 & 8 & 36 & 45 \\
+            \textit{Diabetes mellitus} & 0 & 0 & 1 & 8 & 36 & 45 \\
             Influenza [gripe] e pneumonia & 0 & 0 & 0 & 3 & 36 & 39 \\
             Doenças isquêmicas do coração & 0 & 0 & 0 & 6 & 32 & 38 \\
             Doenças hipertensivas & 0 & 0 & 0 & 7 & 28 & 35 \\
@@ -170,7 +170,7 @@ Distribuição por Grupo CID-10 e faixa etária em mulheres no período de 2021
             Doenças cerebrovasculares & 0 & 0 & 2 & 6 & 54 & 62 \\
             Outras formas de doença do coração & 0 & 0 & 3 & 10 & 45 & 58 \\
             Acidentes & 1 & 0 & 14 & 12 & 24 & 51 \\
-            Diabetes mellitus & 0 & 0 & 0 & 11 & 38 & 49 \\
+            \textit{Diabetes mellitus} & 0 & 0 & 0 & 11 & 38 & 49 \\
             Influenza [gripe] e pneumonia & 0 & 0 & 1 & 6 & 40 & 47 \\
             Doenças hipertensivas & 0 & 0 & 1 & 11 & 31 & 43 \\
             Doenças isquêmicas do coração & 0 & 0 & 0 & 7 & 25 & 32 \\
@@ -195,7 +195,12 @@ Distribuição por Grupo CID-10 e faixa etária em mulheres no período de 2021
 Distribuição por Grupo CID-10 e faixa etária em homens no período de 2021
 :::
 
+Observando a [@tbl-f21] e a [@tbl-m21], o grupo de morte mais comum foi "Outras doenças por vírus" que representa a Covid-19, totalizando 570 fatalidades somente no ano de 2021, se aproximando do número de óbitos para os homens em 2010 (582). Logo em sequência, "Neoplasias malignas" e "Doenças cerebrovasculares
+", 267 e 121 mortes respectivamente,  se mantiveram no top 3 grupos mais frequentes mesmo após 11 anos de diferença entre os anos em análise. Além disso, grupos como "Outras formas de doença do coração" (116 óbitos), "_Diabetes mellitus_" (94 óbitos), "Acidentes" (75 óbitos) e outros grupos apareceram em ambos sexos.
 
+Entretanto, os grupos "Outras doenças do aparelho respiratório" (5 óbitos), "Transt vesícula biliar, vias biliares e pâncreas" (9 óbitos), "Fet rec-nasc afet fat mat e compl grav, trab parto" (7 óbitos), "Outras doenças degenerativas do sistema nervoso" (6 óbitos) e "Obesidade e outras formas de hiperalimentação" (5 óbitos) somente aparecem entre os 20 mais comuns no caso do sexo feminino. De maneira semelhante, os grupos "Agressões" (28 óbitos), "Eventos (fatos) cuja intenção é indeterminada" (8 óbitos), "Infecções da pele e do tecido subcutâneo" (8 óbitos) e "Lesões autoprovocadas intencionalmente" (8 óbitos) aparecem só nos indivíduos do sexo masculino.
+
+Por fim, as meninas com idades menores que 5 anos e entre 5 a 14 anos de vida, 7 e 3 respectivamente, faleceram mais que os meninos na mesma faixa etária, 1 e 1 respectivamente, com as demais faixas os indivíduos do sexo masculino morreram com maior frequência, 70, 183 e 697 respectivamente. Há uma diferença de 175 homens falecendo a mais que as mulheres no ano em questão.
 
 #### 2024
 
@@ -208,7 +213,7 @@ Distribuição por Grupo CID-10 e faixa etária em homens no período de 2021
             \textbf{Grupo CID-10} & \textbf{menor que 5} & \textbf{5 a 14 anos} & \textbf{15 a 39 anos} & \textbf{40 a 59 anos} & \textbf{60 anos e mais} & \textbf{Total} \\
             \hline
             Neoplasias malignas & 0 & 1 & 5 & 37 & 89 & 132 \\
-            Diabetes mellitus & 0 & 0 & 1 & 11 & 60 & 72 \\
+            \textit{Diabetes mellitus} & 0 & 0 & 1 & 11 & 60 & 72 \\
             Influenza [gripe] e pneumonia & 0 & 1 & 0 & 2 & 62 & 65 \\
             Doenças hipertensivas & 0 & 0 & 0 & 1 & 57 & 58 \\
             Doenças isquêmicas do coração & 0 & 0 & 1 & 7 & 49 & 57 \\
@@ -251,7 +256,7 @@ Distribuição por Grupo CID-10 e faixa etária em mulheres no período de 2024
             Doenças cerebrovasculares & 0 & 0 & 2 & 9 & 50 & 61 \\
             Doenças isquêmicas do coração & 0 & 0 & 0 & 8 & 49 & 57 \\
             Doenças hipertensivas & 0 & 0 & 0 & 12 & 41 & 53 \\
-            Diabetes mellitus & 0 & 0 & 0 & 14 & 37 & 51 \\
+            \textit{Diabetes mellitus} & 0 & 0 & 0 & 14 & 37 & 51 \\
             Agressões & 0 & 0 & 36 & 9 & 0 & 45 \\
             Outras formas de doença do coração & 0 & 0 & 2 & 5 & 24 & 31 \\
             Doenças do fígado & 0 & 0 & 1 & 8 & 16 & 25 \\
