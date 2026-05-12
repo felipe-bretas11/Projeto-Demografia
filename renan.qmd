@@ -4,7 +4,7 @@ output-file: "Nome do alocado - análise 3 e 4"
 ---
 
 ```{r setup}
-source("rdocs/consultor2.R")
+source("rdocs/Demog.R")
 ```
 
 
@@ -12,12 +12,12 @@ source("rdocs/consultor2.R")
 # Rodar apenas uma vez na vida!
 ## Instalando o tinytex(pacote apenas)
 ### CRAN version
-install.packages('tinytex')
+#install.packages('tinytex')
 
 
 ## Baixando o tinytex
-library(tinytex)
-tinytex::install_tinytex()
+#library(tinytex)
+#tinytex::install_tinytex()
 ```
 
 # Objetivo
@@ -26,49 +26,55 @@ Esse template foi criado para o alocado conseguir observar como ficaria sua aná
 
 # Análises
 
-## Análise 3
+## Análise do Diagrama de Lexis  
 
-## Análise 4
+Essa análise foi feita com o intuito de entender os nascimentos e óbitos durante o período de 2000 até 2024 em Ipatingana na faixa etária de 0 a 5 anos completos, obtendo assim uma noção da probabilidade de sobrevivência. Para isso, foi feito um diagrama de Lexis e as probabilidades de sobrevivência foram calculadas. 
+
 
 ```{r}
-#| label: fig-
-#| fig-cap: "Gráfico "
+#| label: fig-R1
+#| fig-cap: "Diagrama de Lexis dos nascimentos e óbitos na faixa etária de 0-5 anos"
 
-
+Diagrama
 
 ```
 
 
-::: {#quad- layout-align="center" quad-pos="H"}
+::: {#tbl-R1 layout-align="center" tbl-pos="H"}
 ```{=latex}
-
-
-
+\begin{tabular}{l c}
+\toprule
+\textbf{Indicador} & \textbf{Probabilidade} \\
+\midrule
+Probabilidade de sobreviver até 1 ano de idade (2000-2019)  & 0,9885962 \\
+Probabilidade de sobreviver até 5 anos de idade (2000-2023) & 0,9865832 \\
+\bottomrule
+\end{tabular}
 ```
-
-Medidas resumo da 
+Probabilidades de sobrevivência por faixa etária
 :::
 
-
-
-::: {#tbl-modalidades layout-align="center" tbl-pos="H"}
+::: {#tbl-R2 layout-align="center" tbl-pos="H"}
 ```{=latex}
-
-
+\begin{tabular}{l c}
+\toprule
+\textbf{Raça/Cor} & \textbf{Valor} \\
+\midrule
+Branca & 0,006419753 \\
+Parda & 0,009003215 \\
+\bottomrule
+\end{tabular}
 ```
-
-
+Probabilidade de morrer antes do 1° aniversário segundo Raça/Cor para os anos 2022 e 2023
 :::
 
+Observa-se pela $\ref{fig-R1}$ que grande parte das mortes estão concentradas no 1° ano de vida. Isso támbem fica claro por meio das probabilidades de sobrevivência mostradas na [@tbl-R1], a adição de 4 anos só diminui 0.002 a probabilidade de sobrevivência. Ademais, observa-se uma gradual diminuição do número de nascimentos, indo de 3952 no ano 2000 para 2606 em 2024, que vai de acordo com a diminuição da natalidade no Brasil.
 
 
 
-$\ref{fig-}$
-
-[@tbl-]
 
 
-[**Quadro** @quad-]
+
 
 
 
