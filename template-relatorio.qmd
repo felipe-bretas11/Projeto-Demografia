@@ -1052,3 +1052,5 @@ Observando a $\ref{fig-nqxfem}$, as probabilidades de morte representado por ${}
 Já a $\ref{fig-nqxmasc}$, o comportamento de ambas as probabilidades é semelhante quando comparado um com o outro, mas com uma leve diferença na faixa de 60 a 64 anos e entre 75 a 79 anos, essa última com o ano de 2010 prevalecendo o de 2024.
 
 # Conclusões
+
+Quando analisado a existência de assosiação entre o tipo de parto com a escolaridade da mãe e a idade delas com base na escolaridade, nota-se que ambas são significativas. A relação idade‑escolaridade é moderada (C=0,341), enquanto a relação tipo de parto - escolaridade, embora clinicamente relevante, tem baixa magnitude (C=0,114).
