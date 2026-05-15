@@ -9,6 +9,7 @@ output-file: trabalho_demografia_ipatinga
 #| include: false
 source("rdocs/source/packages.R")
 source("rdocs/felipe.R")
+source("rdocs/Demog.R")
 ```
 
 # Introdução
@@ -25,10 +26,64 @@ Para o tratamento e análise de dados, foram utilizados o software R em sua vers
 
 ## Alves & Cavenaghi (2012); Berquó & Cavenaghi (2014); Potter et al. (2010); Silva et al. (2022); Adhikari (2023).
 
-## Bahia, Camila Alves et al. Feminicídios em Minas Gerais, Brasil: da caracterização dos eventos à análise espaço-temporal (2026).
+## Bahia, Camila Alves et al. Feminicídios em Minas Gerais, Brasil: da caracterização dos eventos à análise espaço-temporal. Cadernos de Saúde Pública [online]. v. 41, n. 1 [Acessado 11 Maio 2026] , e00015224. Disponível em: <https://doi.org/10.1590/0102-311XPT015224>. ISSN 1678-4464. https://doi.org/10.1590/0102-311XPT015224.
+
+## Faria R, Santana P. Variações espaciais e desigualdades regionais no indicador de mortalidade infantil do estado de Minas Gerais, Brasil. Saude soc [Internet]. 2016Jul;25(3):736–49. Available from: https://doi.org/10.1590/S0104-12902016147609
+
+## Gonçalves GQ, Carvalho JAM de, Wong LLR, Turra CM. A transição da fecundidade no Brasil ao longo do século XX – uma perspectiva regional. Rev bras estud popul [Internet]. 2019;36:e0098. Available from: https://doi.org/10.20947/S0102-3098a0098
+
+## Caldas, Aline Diniz Rodrigues, Santos, Ricardo Ventura.e.Cardoso, Andrey MoreiraIniquidades étnico-raciais na mortalidade infantil: implicações de mudanças do registro de cor/raça nos sistemas nacionais de informação em saúde no Brasil. Cadernos de Saúde Pública [online]. v. 38, n. 4 [Acessado.12 Maio 2026] , e00101721. Disponível em: <https://doi.org/10.1590/0102-311X00101721>. ISSN 1678-4464. https://doi.org/10.1590/0102-311X00101721.
 
 
 # Análises
+
+## Questão 1
+
+Essa análise foi feita com o intuito de entender os nascimentos e óbitos durante o período de 2000 até 2024 em Ipatingana na faixa etária de 0 a 5 anos completos, obtendo assim uma noção da probabilidade de sobrevivência. Para isso, foi feito um diagrama de Lexis e as probabilidades de sobrevivência foram calculadas. 
+
+
+```{r}
+#| label: fig-R1
+#| fig-cap: "Diagrama de Lexis dos nascimentos e óbitos na faixa etária de 0-5 anos"
+
+Diagrama
+
+```
+
+
+::: {#tbl-R1 layout-align="center" tbl-pos="H"}
+```{=latex}
+\begin{tabular}{l c}
+\toprule
+\textbf{Indicador} & \textbf{Probabilidade} \\
+\midrule
+Probabilidade de sobreviver até 1 ano de idade (2000-2019)  & 0,9885962 \\
+Probabilidade de sobreviver até 5 anos de idade (2000-2023) & 0,9865832 \\
+\bottomrule
+\end{tabular}
+```
+Probabilidades de sobrevivência por faixa etária
+:::
+
+::: {#tbl-R2 layout-align="center" tbl-pos="H"}
+```{=latex}
+\begin{tabular}{l c}
+\toprule
+\textbf{Raça/Cor} & \textbf{Valor} \\
+\midrule
+Branca & 0,006419753 \\
+Parda & 0,009003215 \\
+\bottomrule
+\end{tabular}
+```
+Probabilidade de morrer antes do 1° aniversário segundo Raça/Cor para os anos 2022 e 2023
+:::
+
+Observa-se pela $\ref{fig-R1}$ que grande parte das mortes estão concentradas no 1° ano de vida. Isso também fica claro por meio das probabilidades de sobrevivência mostradas na [@tbl-R1], a adição de 4 anos só diminui em 0.002 a probabilidade de sobrevivência. A probabilidade de sobrevivência infantil observada assume valores um pouco maiores que os obtidos por Faria, R. & Santana, P. (2016) no período de 2003-2012: De 2003-2007 a probabilidade foi de 0,9835 e de 2008-2012 foi de 0,9865.  
+
+Observou-se também a probabilidade de se sobreviver ao primeiro aniversário segundo raça/cor para  2022 e 2023. Nesse período, apenas houve óbitos de crianças brancas e pardas e 2 "ignorados", o que restringe a análise. Com o que foi observado, a probabilidade de morte antes do 1° ano de vida é maior nas crianças pardas, como mostrado na [@tbl-R2]. Esse resultado destoa dos obtidos por Caldas (2021), que mostrou uma mortalidade maior nas crianças brancas no Brasil.
+
+Ademais, observa-se uma gradual diminuição do número de nascimentos, indo de 3952 no ano 2000 para 2606 em 2024, que vai de acordo com a diminuição da natalidade no Brasil descrita por Gonçalves GQ (2019). 
 
 ## Questão 2
 
@@ -140,9 +195,9 @@ Tabela de ${}_n f_x$ feminino
 
 As projeções, estas presentes na [@tbl-ibge], superestimaram a população em cerca de 4,3%, levando a uma subestimativa das taxas. Com a população real menor, a TBN sobe para 12,13 e a TFT para 1,65 filhos por mulher – ainda abaixo do nível de reposição, mas mais elevada do que as projeções indicavam. Esse achado reforça a importância de utilizar dados censitários sempre que disponíveis.
 
-Os resultados revelam queda sustentada da fecundidade em Ipatinga, com TFT abaixo de 2,1 filhos por mulher e TLR inferior a 1, indicando tendência ao crescimento vegetativo negativo. A redução da TBN (13,9 para 11,07) e da TFG (47,00 para 42,17) alinha‑se à “fase muito baixa da fecundidade” descrita por Alves & Cavenaghi (2012), cujos determinantes são a anticoncepção, a escolaridade e a inserção feminina no trabalho (Potter et al., 2010).
+Os resultados revelam queda sustentada da fecundidade em Ipatinga, com TFT abaixo de 2,1 filhos por mulher e TLR inferior a 1, indicando tendência ao crescimento vegetativo negativo. A redução da TBN (13,94 para 11,07) e da TFG (47,00 para 42,17) alinha‑se à “fase muito baixa da fecundidade” descrita por Alves & Cavenaghi (2012), cujos determinantes são a anticoncepção, a escolaridade e a inserção feminina no trabalho (Potter et al., 2010).
 
-A $\ref{fig-nfx}$ mostra deslocamento do pico etário: em 2010, o pico era entre os 20 e 24 anos (0,0709); a partir de 2019, desloca‑se para 25‑29 anos (0,0809 em 2024), evidenciando o adiamento da maternidade (Berquó & Cavenaghi, 2014). A fecundidade adolescente (15 a 19 anos) caiu 29% (0,0363 para 0,0257), enquanto a fecundidade após os 30 anos aumentou, especialmente no grupo 35‑39 anos (crescimento de 29%), refletindo postergação associada à maior escolaridade e profissionalização (Adhikari, 2023). Em 2021, observa‑se leve inflexão pandêmica (pico mais tardio aos 30‑34 anos), compatível com o “efeito incerteza” da COVID-19 (Silva et al., 2022). A fecundidade tardia (40‑49 anos) permanece marginal (≤0,0135). A TFT recuou de 1,53 para 1,50, mas o calendário reprodutivo alterou‑se profundamente.
+A $\ref{fig-nfx}$ mostra deslocamento do pico etário: em 2010, o pico era entre os 20 e 24 anos (0,0709); a partir de 2019, desloca-se para 25‑29 anos (0,0809 em 2024), evidenciando o adiamento da maternidade (Berquó & Cavenaghi, 2014). A fecundidade adolescente (15 a 19 anos) caiu 29% (0,0363 para 0,0257), enquanto a fecundidade após os 30 anos aumentou, especialmente no grupo 35 - 39 anos (crescimento de 29%), refletindo postergação associada à maior escolaridade e profissionalização (Adhikari, 2023). Em 2021, observa‑se leve inflexão pandêmica (pico mais tardio aos 30‑34 anos), compatível com o “efeito incerteza” da COVID-19 (Silva et al., 2022). A fecundidade tardia (40‑49 anos) permanece marginal (≤0,0135). A TFT recuou de 1,53 para 1,50, mas o calendário reprodutivo alterou‑se profundamente.
 
 A TBR (0,73 e 0,76) e a TLR (0,87 e 0,73) são inferiores a 1. A pequena diferença entre elas (0,741 contra 0,73 em 2024) mostra que a mortalidade feminina jovem é baixa, e a queda na reprodução deve-se principalmente ao comportamento reprodutivo. Desse modo, Ipatinga já se encontra em regime de fecundidade abaixo da reposição.
 
