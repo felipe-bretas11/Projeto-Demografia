@@ -303,8 +303,9 @@ Comparando os resultados obtidos com o Bahia, Camila Alves et al. Feminicídios 
 
 ::: {#tbl-f5 layout-align="center" tbl-pos="H"}
 ```{=latex}
-
-\resizebox{\textwidth}{!}{
+\begin{table}
+    \centering
+    \scriptsize
         \begin{tabular}{l r r r r}
             \hline
             \textbf{Grupo CID-10} & \textbf{2010} & \textbf{2021} & \textbf{2024} & \textbf{Total} \\
@@ -333,16 +334,16 @@ Comparando os resultados obtidos com o Bahia, Camila Alves et al. Feminicídios 
             \textbf{Total} & \textbf{17} & \textbf{11} & \textbf{15} & \textbf{43} \\
             \hline
         \end{tabular}
-    }
-
+\end{table}
 ```
 Distribuição por Grupo CID-10 nos anos de 2010, 2021 e 2024 em meninas < 5 anos
 :::
 
 ::: {#tbl-m5 layout-align="center" tbl-pos="H"}
 ```{=latex}
-
-\resizebox{\textwidth}{!}{
+\begin{table}
+    \centering
+    \scriptsize
         \begin{tabular}{l r r r r}
             \hline
             \textbf{Grupo CID-10} & \textbf{2010} & \textbf{2021} & \textbf{2024} & \textbf{Total} \\
@@ -371,7 +372,7 @@ Distribuição por Grupo CID-10 nos anos de 2010, 2021 e 2024 em meninas < 5 ano
             \textbf{Total} & \textbf{26} & \textbf{19} & \textbf{14} & \textbf{59} \\
             \hline
         \end{tabular}
-    }
+\end{table}
 
 ```
 Distribuição por Grupo CID-10 nos anos de 2010, 2021 e 2024 em meninos < 5 anos
@@ -381,8 +382,9 @@ Distribuição por Grupo CID-10 nos anos de 2010, 2021 e 2024 em meninos < 5 ano
 
 ::: {#tbl-f514 layout-align="center" tbl-pos="H"}
 ```{=latex}
-
-\resizebox{\textwidth}{!}{
+\begin{table}
+    \centering
+    \scriptsize
         \begin{tabular}{l r r r r}
             \hline
             \textbf{Grupo CID-10} & \textbf{2010} & \textbf{2021} & \textbf{2024} & \textbf{Total} \\
@@ -397,7 +399,7 @@ Distribuição por Grupo CID-10 nos anos de 2010, 2021 e 2024 em meninos < 5 ano
             \textbf{Total} & \textbf{1} & \textbf{3} & \textbf{5} & \textbf{9} \\
             \hline
         \end{tabular}
-    }
+\end{table}
 
 ```
 Distribuição por Grupo CID-10 nos anos de 2010, 2021 e 2024 em meninas entre 5 e 14 anos
@@ -405,8 +407,9 @@ Distribuição por Grupo CID-10 nos anos de 2010, 2021 e 2024 em meninas entre 5
 
 ::: {#tbl-m514 layout-align="center" tbl-pos="H"}
 ```{=latex}
-
-\resizebox{\textwidth}{!}{
+\begin{table}
+    \centering
+    \scriptsize
         \begin{tabular}{l r r r r}
             \hline
             \textbf{Grupo CID-10} & \textbf{2010} & \textbf{2021} & \textbf{2024} & \textbf{Total} \\
@@ -422,7 +425,7 @@ Distribuição por Grupo CID-10 nos anos de 2010, 2021 e 2024 em meninas entre 5
             \textbf{Total} & \textbf{7} & \textbf{3} & \textbf{3} & \textbf{13} \\
             \hline
         \end{tabular}
-    }
+\end{table}
 
 ```
 Distribuição por Grupo CID-10 nos anos de 2010, 2021 e 2024 em meninos entre 5 e 14 anos
