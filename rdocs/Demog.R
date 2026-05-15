@@ -86,7 +86,7 @@ LEXIS2<- todas_combinacoes_completas %>%
 LEXIS<-LEXIS[-155,]
 Diagrama<-lexis_grid(year_start = 2000,year_end = 2025,age_start = 0,age_end = 5)
 Diagrama<-Diagrama+annotate("text",x=LEXIS2$ANO_L,y=LEXIS2$IdadeL,label=LEXIS2$contagem,color="black",size=2.5)+annotate("text",x=Banco$Ano,y=0.15,label=Banco$quantidade,color="red",size=2)+
-  theme(axis.text.x = element_text(size = 8))
+  theme(axis.text.x = element_text(size = 6))
 Diagrama
 Prob <- df2 %>%
   filter(ANO_N %in% 2000:2019) %>%  # substitua 'ano' pelo nome da coluna 102

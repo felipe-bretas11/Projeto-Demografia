@@ -68,9 +68,20 @@ Parda & 0,009003215 \\
 Probabilidade de morrer antes do 1° aniversário segundo Raça/Cor para os anos 2022 e 2023
 :::
 
-Observa-se pela $\ref{fig-R1}$ que grande parte das mortes estão concentradas no 1° ano de vida. Isso támbem fica claro por meio das probabilidades de sobrevivência mostradas na [@tbl-R1], a adição de 4 anos só diminui 0.002 a probabilidade de sobrevivência. Ademais, observa-se uma gradual diminuição do número de nascimentos, indo de 3952 no ano 2000 para 2606 em 2024, que vai de acordo com a diminuição da natalidade no Brasil.
+Observa-se pela $\ref{fig-R1}$ que grande parte das mortes estão concentradas no 1° ano de vida. Isso também fica claro por meio das probabilidades de sobrevivência mostradas na [@tbl-R1], a adição de 4 anos só diminui em 0.002 a probabilidade de sobrevivência. A probabilidade de sobrevivência infantil observada assume valores um pouco maiores que os obtidos por Faria, R. & Santana, P. (2016) no período de 2003-2012: De 2003-2007 a probabilidade foi de 0,9835 e de 2008-2012 foi de 0,9865.  
+
+Observou-se também a probabilidade de se sobreviver ao primeiro aniversário segundo raça/cor para  2022 e 2023. Nesse período, apenas houve óbitos de crianças brancas e pardas e 2 "ignorados", o que restringe a análise. Com o que foi observado, a probabilidade de morte antes do 1° ano de vida é maior nas crianças pardas, como mostrado na [@tbl-R2]. Esse resultado destoa dos obtidos por Caldas (2021), que mostrou uma mortalidade maior nas crianças brancas no Brasil.
+
+Ademais, observa-se uma gradual diminuição do número de nascimentos, indo de 3952 no ano 2000 para 2606 em 2024, que vai de acordo com a diminuição da natalidade no Brasil descrita por Gonçalves GQ (2019).  
 
 
+
+Faria R, Santana P. Variações espaciais e desigualdades regionais no indicador de mortalidade infantil do estado de Minas Gerais, Brasil. Saude soc [Internet]. 2016Jul;25(3):736–49. Available from: https://doi.org/10.1590/S0104-12902016147609
+
+Gonçalves GQ, Carvalho JAM de, Wong LLR, Turra CM. A transição da fecundidade no Brasil ao longo do século XX – uma perspectiva regional
+				. Rev bras estud popul [Internet]. 2019;36:e0098. Available from: https://doi.org/10.20947/S0102-3098a0098
+
+Caldas, Aline Diniz Rodrigues, Santos, Ricardo Ventura.e.Cardoso, Andrey MoreiraIniquidades étnico-raciais na mortalidade infantil: implicações de mudanças do registro de cor/raça nos sistemas nacionais de informação em saúde no Brasil. Cadernos de Saúde Pública [online]. v. 38, n. 4 [Acessado.14 Maio 2026] , e00101721. Disponível em: <https://doi.org/10.1590/0102-311X00101721>. ISSN 1678-4464. https://doi.org/10.1590/0102-311X00101721.
 
 
 
