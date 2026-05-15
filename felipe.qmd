@@ -33,7 +33,9 @@ A fim de comparar as estruturas de mortalidade por causas entre os anos de 2010,
 
 Para melhor visualização dos dados o estudo será segmentado nos anos comentados anteriormente, a fim de comparar as diferentes estruturas entre os sexos feminino e masculino.
 
-#### 2010
+#### Análise por ano
+
+##### 2010
 
 ::: {#tbl-f10 layout-align="center" tbl-pos="H"}
 ```{=latex}
@@ -117,7 +119,7 @@ Em contrapartida, os grupos "Doenças infecciosas intestinais" (7 óbitos), "Out
 
 Por fim, nota-se que em todas as faixas etárias analisadas, somente as mulheres com 60 ou mais anos faleceram mais que os homens, 307 a 286, respectivamente, no ano de 2010. Desse modo, os homens apresentaram 144 mortes daqueles 20 agrupamentos mais comuns durante todo o ano em análise.
 
-#### 2021
+##### 2021
 
 ::: {#tbl-f21 layout-align="center" tbl-pos="H"}
 ```{=latex}
@@ -202,7 +204,7 @@ Entretanto, os grupos "Outras doenças do aparelho respiratório" (5 óbitos), "
 
 Por fim, as meninas com idades menores que 5 anos e entre 5 a 14 anos de vida, 7 e 3 respectivamente, faleceram mais que os meninos na mesma faixa etária, 1 e 1 respectivamente, com as demais faixas os indivíduos do sexo masculino morreram com maior frequência, 70, 183 e 697 respectivamente. Há uma diferença de 175 homens falecendo a mais que as mulheres no ano em questão.
 
-#### 2024
+##### 2024
 
 ::: {#tbl-f24 layout-align="center" tbl-pos="H"}
 ```{=latex}
@@ -287,11 +289,145 @@ Porém, os grupos "Alguns transt q comprometem o mecanismo imunitário" (10 óbi
 
 Por fim, como ocorrido no ano de 2021, as meninas com idades menores que 5 anos e entre 5 a 14 anos de vida, 4 e 4 respectivamente, faleceram mais que os meninos na mesma faixa etária, 1 e 2 respectivamente, com as demais faixas os indivíduos do sexo masculino morreram com maior frequência, 79, 157 e 559 respectivamente. Há uma diferença de 153 homens falecendo a mais que as mulheres no ano em questão.
 
-#### Comparações entre os anos
+##### Comparações entre os anos
 
 Analisando as pessoas do sexo feminino utilizando a [@tbl-f10], a [@tbl-f21] e a [@tbl-f24], é notável que o ano de 2021 foi o que apresentou mais óbitos totalizando 777, sendo que senhoras com 60 ou mais anos somente nesse ano faleceram mais que as mulheres no ano de 2010 e próximo ao ano 2024, com 618. Além disso, as "Neoplasias malignas" sempre estando entre os grupos mais frequentes. O grupo que representa "Agressões" somente foi relatado entre os 20 mais comuns no ano de 2024 com 8 óbitos. Os agrupamentos "Obesidade e outras formas de hiperalimentação", "Doenças cardíaca pulmonar e da circulação pulmonar" e "Outras doenças do aparelho respiratório" entre aqueles que apareceram em algum dos anos, foram os menos frequentes em um ano específico, com 5 óbitos reportados no ano de 2021.
 
 Ademais, estudando a [@tbl-m10], a [@tbl-m21] e a [@tbl-m24] que falam sobre os indivíduos do sexo masculino, semelhantemente aos grupos mais frequentes para as mulheres, o maior número de óbitos em um ano, com 952, foi no ano de 2021 e as "Neoplasias malignas" aparecendo sempre entre os grupos mais com maior número de mortes reportadas nos anos analisados. Diferentemente das mulheres, as "Agressões" apareceram em todos os anos em análise para os homens, com 130 ocorrências. Por fim, a Covid-19 apareceu em 2 anos como mencionado nas análises em cada ano individualmente somente para esse sexo, com 334 casos, mas somente 3 em 2024.
+
+Comparando os resultados obtidos com o Bahia, Camila Alves et al. Feminicídios em Minas Gerais, Brasil: da caracterização dos eventos à análise espaço-temporal. [2026], é comentado sobre o valor de feminicídios em Ipatinga durante os anos de 2016 a 2020, com 60 óbitos nessa faixa, representando 8,60%. Contudo, durante a análise e obtenção das observações para construção desse material, nota-se que os crimes agrupados como "Agressões" somente aparece para indivíduos do sexo feminino no ano de 2024 (8 óbitos), não aparecendo entre os 20 grupos CID-10 mais comuns nos anos analisados.
+
+#### Análise por faixa etária
+
+##### $<$ 5 anos
+
+::: {#tbl-f5 layout-align="center" tbl-pos="H"}
+```{=latex}
+
+\resizebox{\textwidth}{!}{
+        \begin{tabular}{l r r r r}
+            \hline
+            \textbf{Grupo CID-10} & \textbf{2010} & \textbf{2021} & \textbf{2024} & \textbf{Total} \\
+            \hline
+            Fet rec-nasc afet fat mat e compl grav, trab parto & 1 & 7 & 1 & 9 \\
+            Malformações congênitas do aparelho circulatório & 2 & 1 & 1 & 4 \\
+            Outras malformações congênitas & 2 & 0 & 2 & 4 \\
+            Acidentes & 1 & 0 & 3 & 4 \\
+            Outros transtornos originados no período perinatal & 2 & 0 & 1 & 3 \\
+            Anomalias cromossômicas NCOP & 2 & 0 & 1 & 3 \\
+            Infecções específicas do período perinatal & 1 & 1 & 0 & 2 \\
+            Malformações congênitas do sistema nervoso & 1 & 0 & 1 & 2 \\
+            Outras doenças bacterianas & 1 & 0 & 0 & 1 \\
+            Outras doenças do sangue e órgãos hematopoéticos & 0 & 1 & 0 & 1 \\
+            Desnutrição & 1 & 0 & 0 & 1 \\
+            Doenças inflamatórias do sistema nervoso central & 1 & 0 & 0 & 1 \\
+            Atrofias sistêm q afetam princ o sist nerv central & 0 & 0 & 1 & 1 \\
+            Transtornos episódicos e paroxísticos & 0 & 0 & 1 & 1 \\
+            Influenza [gripe] e pneumonia & 1 & 0 & 0 & 1 \\
+            Outras doenças do aparelho digestivo & 0 & 0 & 1 & 1 \\
+            Transt respirat e cardiovasc específ per perinatal & 0 & 0 & 1 & 1 \\
+            Transt hemorrág e hematológ feto e recém-nascido & 1 & 0 & 0 & 1 \\
+            Transt aparelho digestivo do feto ou recém-nascido & 0 & 0 & 1 & 1 \\
+            Malformações congênitas do aparelho respiratório & 0 & 1 & 0 & 1 \\
+            \hline
+            \textbf{Total} & \textbf{17} & \textbf{11} & \textbf{15} & \textbf{43} \\
+            \hline
+        \end{tabular}
+    }
+
+```
+Distribuição por Grupo CID-10 nos anos de 2010, 2021 e 2024 em meninas < 5 anos
+:::
+
+::: {#tbl-m5 layout-align="center" tbl-pos="H"}
+```{=latex}
+
+\resizebox{\textwidth}{!}{
+        \begin{tabular}{l r r r r}
+            \hline
+            \textbf{Grupo CID-10} & \textbf{2010} & \textbf{2021} & \textbf{2024} & \textbf{Total} \\
+            \hline
+            Transt respirat e cardiovasc específ per perinatal & 5 & 3 & 0 & 8 \\
+            Fet rec-nasc afet fat mat e compl grav, trab parto & 0 & 6 & 1 & 7 \\
+            Infecções específicas do período perinatal & 3 & 1 & 1 & 5 \\
+            Transt relac com a duração gestação e cresc fetal & 4 & 0 & 0 & 4 \\
+            Malformações congênitas do aparelho circulatório & 0 & 2 & 2 & 4 \\
+            Anomalias cromossômicas NCOP & 2 & 0 & 2 & 4 \\
+            Outras doenças bacterianas & 2 & 0 & 1 & 3 \\
+            Malformações congênitas do aparelho urinário & 2 & 0 & 1 & 3 \\
+            Outras malformações congênitas & 2 & 0 & 1 & 3 \\
+            Acidentes & 2 & 1 & 0 & 3 \\
+            Outros transtornos do sistema nervoso & 1 & 0 & 1 & 2 \\
+            Transt endócr e metaból trans espec fet e rec-nasc & 0 & 2 & 0 & 2 \\
+            Transt aparelho digestivo do feto ou recém-nascido & 0 & 2 & 0 & 2 \\
+            Malformações congênitas do aparelho respiratório & 0 & 0 & 2 & 2 \\
+            Malform e deform congênit do sistema osteomuscular & 0 & 1 & 1 & 2 \\
+            Anemias hemolíticas & 0 & 1 & 0 & 1 \\
+            Distúrbios metabólicos & 1 & 0 & 0 & 1 \\
+            Doenças inflamatórias do sistema nervoso central & 1 & 0 & 0 & 1 \\
+            Paralisia cerebral e outras síndromes paralíticas & 0 & 0 & 1 & 1 \\
+            Influenza [gripe] e pneumonia & 1 & 0 & 0 & 1 \\
+            \hline
+            \textbf{Total} & \textbf{26} & \textbf{19} & \textbf{14} & \textbf{59} \\
+            \hline
+        \end{tabular}
+    }
+
+```
+Distribuição por Grupo CID-10 nos anos de 2010, 2021 e 2024 em meninos < 5 anos
+:::
+
+
+
+::: {#tbl-f514 layout-align="center" tbl-pos="H"}
+```{=latex}
+
+\resizebox{\textwidth}{!}{
+        \begin{tabular}{l r r r r}
+            \hline
+            \textbf{Grupo CID-10} & \textbf{2010} & \textbf{2021} & \textbf{2024} & \textbf{Total} \\
+            \hline
+            Doenças infecciosas intestinais & 1 & 0 & 0 & 1 \\
+            Febres por arbovírus e febres hemorrágicas virais & 0 & 0 & 1 & 1 \\
+            Neoplasias malignas & 0 & 3 & 1 & 4 \\
+            Influenza [gripe] e pneumonia & 0 & 0 & 1 & 1 \\
+            Doenças crônicas das vias aéreas inferiores & 0 & 0 & 1 & 1 \\
+            Acidentes & 0 & 0 & 1 & 1 \\
+            \hline
+            \textbf{Total} & \textbf{1} & \textbf{3} & \textbf{5} & \textbf{9} \\
+            \hline
+        \end{tabular}
+    }
+
+```
+Distribuição por Grupo CID-10 nos anos de 2010, 2021 e 2024 em meninas entre 5 e 14 anos
+:::
+
+::: {#tbl-m514 layout-align="center" tbl-pos="H"}
+```{=latex}
+
+\resizebox{\textwidth}{!}{
+        \begin{tabular}{l r r r r}
+            \hline
+            \textbf{Grupo CID-10} & \textbf{2010} & \textbf{2021} & \textbf{2024} & \textbf{Total} \\
+            \hline
+            Neoplasias malignas & 0 & 1 & 0 & 1 \\
+            Doenças da junção mioneural e dos músculos & 0 & 1 & 0 & 1 \\
+            Outros transtornos do sistema nervoso & 0 & 1 & 0 & 1 \\
+            Doenças cerebrovasculares & 1 & 0 & 0 & 1 \\
+            Malformações congênitas do aparelho circulatório & 0 & 0 & 1 & 1 \\
+            Acidentes & 3 & 0 & 2 & 5 \\
+            Agressões & 3 & 0 & 0 & 3 \\
+            \hline
+            \textbf{Total} & \textbf{7} & \textbf{3} & \textbf{3} & \textbf{13} \\
+            \hline
+        \end{tabular}
+    }
+
+```
+Distribuição por Grupo CID-10 nos anos de 2010, 2021 e 2024 em meninos entre 5 e 14 anos
+:::
+
 
 
 ### Letra d
@@ -318,7 +454,9 @@ Taxa de Mortalidade Infantil (TMI) por sexo em 2023
 
 Observa-se pela [@tbl-TMI] que a taxa de mortalidade infantil ($TMI$) em 2023 para o sexo masculino se encontra um pouco maior do que o sexo feminino, com uma diferença de 0,488297.
 
-Com essa informação, aliado com as taxas de específicas de mortalidade calculadas ($nMx$) no item a e que serão recordadas a seguir, as Tábuas de Vida forão confeccionadas separadas pelos anos em análise, 2010 e 2024, e por sexo, masculino e feminino. Ademais, para uma melhor visualização, as Tábuas de Vida serão separadas por ano.
+#### Tábuas de Vida
+
+Com essa informação, aliado com as taxas de específicas de mortalidade calculadas (${}_n M_x$) no item a e que serão recordadas a seguir, as Tábuas de Vida forão confeccionadas separadas pelos anos em análise, 2010 e 2024, e por sexo, masculino e feminino. Ademais, para uma melhor visualização, as Tábuas de Vida serão separadas por ano.
 
 ::: {#tbl-nMxf layout-align="center" tbl-pos="H"}
 ```{=latex}
@@ -349,7 +487,7 @@ Com essa informação, aliado com as taxas de específicas de mortalidade calcul
     \end{tabular}
 
 ```
-Taxas Específicas de Mortalidade ($nMx$) para o Sexo Masculino - 2010 e 2024
+Taxas Específicas de Mortalidade (${}_n M_x$) para o Sexo Masculino - 2010 e 2024
 :::
 
 ::: {#tbl-nMxm layout-align="center" tbl-pos="H"}
@@ -381,10 +519,10 @@ Taxas Específicas de Mortalidade ($nMx$) para o Sexo Masculino - 2010 e 2024
     \end{tabular}
 
 ```
-Taxas Específicas de Mortalidade ($nMx$) para o Sexo Masculino - 2010 e 2024
+Taxas Específicas de Mortalidade (${}_n M_x$) para o Sexo Masculino - 2010 e 2024
 :::
 
-#### 2010
+##### 2010
 
 ::: {#tbl-tvf10 layout-align="center" tbl-pos="H"} 
 ```{=latex}
@@ -392,7 +530,7 @@ Taxas Específicas de Mortalidade ($nMx$) para o Sexo Masculino - 2010 e 2024
 \resizebox{\textwidth}{!}{
 \begin{tabular}{l r r r r r r r r r r}
             \hline
-            \textbf{Grupo Etário} & \textbf{$n$} & \textbf{$nMx$} & \textbf{$nAx$} & \textbf{$nqx$} & \textbf{$npx$} & \textbf{$lx$} & \textbf{$ndx$} & \textbf{$nLx$} & \textbf{$Tx$} & \textbf{$ex$} \\
+            \textbf{Grupo Etário} & \textbf{$n$} & \textbf{${}_n M_x$} & \textbf{${}_n A_x$} & \textbf{${}_n q_x$} & \textbf{${}_n p_x$} & \textbf{$l_x$} & \textbf{${}_n d_x$} & \textbf{${}_n L_x$} & \textbf{$T_x$} & \textbf{$e_x$} \\
             \hline
             $<$ 1 ano & 1 & 0,00866 & 0,100 & 0,00858 & 0,99142 & 100000 & 858 & 99228 & 8010774 & 80,11 \\
             1 a 4 anos & 4 & 0,00046 & 1,500 & 0,00185 & 0,99815 & 99142 & 183 & 396110 & 7911546 & 79,80 \\
@@ -426,7 +564,7 @@ Tábua de Vida - Sexo Feminino (2010)
 \resizebox{\textwidth}{!}{
 \begin{tabular}{l r r r r r r r r r r}
             \hline
-            \textbf{Grupo Etário} & \textbf{$n$} & \textbf{$nMx$} & \textbf{$nAx$} & \textbf{$nqx$} & \textbf{$npx$} & \textbf{$lx$} & \textbf{$ndx$} & \textbf{$nLx$} & \textbf{$Tx$} & \textbf{$ex$} \\
+            \textbf{Grupo Etário} & \textbf{$n$} & \textbf{${}_n M_x$} & \textbf{${}_n A_x$} & \textbf{${}_n q_x$} & \textbf{${}_n p_x$} & \textbf{$l_x$} & \textbf{${}_n d_x$} & \textbf{${}_n L_x$} & \textbf{$T_x$} & \textbf{$e_x$} \\
             \hline
             $<$ 1 ano & 1 & 0,01463 & 0,100 & 0,01445 & 0,98555 & 100000 & 1445 & 98700 & 7383632 & 73,84 \\
             1 a 4 anos & 4 & 0,00044 & 1,500 & 0,00175 & 0,99825 & 98555 & 173 & 393790 & 7284932 & 73,92 \\
@@ -482,7 +620,7 @@ Analisando as Tábuas mais especificamente, é notável que para as mulheres a p
 
 Nesse último caso vale a pena ser mencionado que, por não ter ocorrido mortes relatadas em 2010 para a faixa etária 10 a 14 anos no sexo feminino, as probabilidades calculadas após essa faixa podem não condizer completamente com a realidade. 
 
-#### 2024
+##### 2024
 
 ::: {#tbl-tvf24 layout-align="center" tbl-pos="H"} 
 ```{=latex}
@@ -490,7 +628,7 @@ Nesse último caso vale a pena ser mencionado que, por não ter ocorrido mortes 
 \resizebox{\textwidth}{!}{
         \begin{tabular}{l r r r r r r r r r r}
             \hline
-            \textbf{Grupo Etário} & \textbf{$n$} & \textbf{$nMx$} & \textbf{$nAx$} & \textbf{$nqx$} & \textbf{$npx$} & \textbf{$lx$} & \textbf{$ndx$} & \textbf{$nLx$} & \textbf{$Tx$} & \textbf{$ex$} \\
+            \textbf{Grupo Etário} & \textbf{$n$} & \textbf{${}_n M_x$} & \textbf{${}_n A_x$} & \textbf{${}_n q_x$} & \textbf{${}_n p_x$} & \textbf{$l_x$} & \textbf{${}_n d_x$} & \textbf{${}_n L_x$} & \textbf{$T_x$} & \textbf{$e_x$} \\
             \hline
             $<$ 1 ano & 1 & 0,00995 & 0,100 & 0,00951 & 0,99049 & 100000 & 951 & 99144 & 8145444 & 81,45 \\
             1 a 4 anos & 4 & 0,00059 & 1,500 & 0,00239 & 0,99761 & 99049 & 237 & 395604 & 8046299 & 81,24 \\
@@ -524,7 +662,7 @@ Tábua de Vida - Sexo Feminino (2024)
 \resizebox{\textwidth}{!}{
         \begin{tabular}{l r r r r r r r r r r}
             \hline
-            \textbf{Grupo Etário} & \textbf{$n$} & \textbf{$nMx$} & \textbf{$nAx$} & \textbf{$nqx$} & \textbf{$npx$} & \textbf{$lx$} & \textbf{$ndx$} & \textbf{$nLx$} & \textbf{$Tx$} & \textbf{$ex$} \\
+            \textbf{Grupo Etário} & \textbf{$n$} & \textbf{${}_n M_x$} & \textbf{${}_n A_x$} & \textbf{${}_n q_x$} & \textbf{${}_n p_x$} & \textbf{$l_x$} & \textbf{${}_n d_x$} & \textbf{${}_n L_x$} & \textbf{$T_x$} & \textbf{$e_x$} \\
             \hline
             $<$ 1 ano & 1 & 0,00962 & 0,100 & 0,00920 & 0,99080 & 100000 & 920 & 99172 & 7494262 & 74,94 \\
             1 a 4 anos & 4 & 0,00057 & 1,500 & 0,00232 & 0,99768 & 99080 & 230 & 395745 & 7395091 & 74,64 \\
@@ -578,51 +716,22 @@ Quando comparado aos valores obtidos na [@tbl-est2024] para a idade simples 0, a
 
 Analisando sobre a perspectiva da idade simples 60, as senhoras moradoras da Ipatinga apresentam uma esperança de vida maior do que os estudos apontam para o estado de Minas Gerais, com esperança de vida de 25,40. Já para os homens, o mesmo ocorre, com valor da estimativa para a faixa de 60 a 64 maiores do que aquelas apresentadas em ambos os estudos.
 
-```{r}
-#| label: fig-
-#| fig-cap: "Gráfico "
+#### Análise do $l_x$
 
+![Função lx (Sobreviventes) no Sexo Feminino - 2010 e 2024](images/lx_fem.png){#fig-lxfem fig-align="center"}
 
+![Função lx (Sobreviventes) no Sexo Masculino - 2010 e 2024](images/lx_masc.png){#fig-lxmasc fig-align="center"}
 
-```
+Analisando a $\ref{fig-lxfem}$ é possível notar que, para as mulheres ipatinguenses, o valor encontrado para $l_x$, estre representando o número de pessoas que chegam à idade exata $x$ é bastante similar entre os dois anos em análise, 2010 e 2024, que o comportamento da função é bastante similar durante todas as faixas etárias, com uma pequena diferença entre 60 e 64 anos e a partir dos 65+, a diferença vai aumentando, com uma diferença 5.545 de 2024 para 2010.
 
+Já para o sexo masculino, representado pela $\ref{fig-lxmasc}$, é notável que, apesar do comportamento semelhante entre os anos, com valores um pouco abaixo para o ano de 2010, com uma maior amplitude para as faixas: 40 a 44 anos; 50 a 54 anos; 80 anos e mais.
 
-::: {#quad- layout-align="center" quad-pos="H"}
-```{=latex}
+#### Análise de ${}_n q_x$
 
+![Probabilidade de Morte nqx no Sexo Feminino - 2010 e 2024](images/nqx_fem.png){#fig-nqxfem fig-align="center"}
 
+![Probabilidade de Morte nqx no Sexo Masculino - 2010 e 2024](images/nqx_masc.png){#fig-nqxmasc fig-align="center"}
 
-```
+Observando a $\ref{fig-nqxfem}$, as probabilidades de morte representado por ${}_n q_x$, com ambos possuindo um comportamento crescente entre os anos 50 e 54, com um valor de 2010 levemente maior quando comparado com 2024. Contudo, a maior diferença entre as probabilidades se encontra na faixa de 70 a 74 anos de vida, com o valor de 2010 maior que o ano de 2024.
 
-Medidas resumo da 
-:::
-
-
-
-::: {#tbl-modalidades layout-align="center" tbl-pos="H"}
-```{=latex}
-
-
-```
-
-
-:::
-
-
-
-
-$\ref{fig-}$
-
-[@tbl-]
-
-
-[**Quadro** @quad-]
-
-
-
-
-
-
-
-
-
+Já a $\ref{fig-nqxmasc}$, o comportamento de ambas as probabilidades é semelhante quando comparado um com o outro, mas com uma leve diferença na faixa de 60 a 64 anos e entre 75 a 79 anos, essa última com o ano de 2010 prevalecendo o de 2024.
