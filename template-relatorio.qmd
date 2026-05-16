@@ -24,7 +24,7 @@ Para o tratamento e análise de dados, foram utilizados o software R em sua vers
 
 # Referencial Teórico
 
-## Alves & Cavenaghi (2012); Berquó & Cavenaghi (2014); Potter et al. (2010); Silva et al. (2022); Adhikari (2023).
+- Alves & Cavenaghi (2012); Berquó & Cavenaghi (2014); Potter et al. (2010); Silva et al. (2022); Adhikari (2023).
 
 - Bahia, Camila Alves et al. Feminicídios em Minas Gerais, Brasil: da caracterização dos eventos à análise espaço-temporal. Cadernos de Saúde Pública [online]. v. 41, n. 1 [Acessado 11 Maio 2026] , e00015224. Disponível em: <https://doi.org/10.1590/0102-311XPT015224>. ISSN 1678-4464. https://doi.org/10.1590/0102-311XPT015224.
 
@@ -334,6 +334,266 @@ Dessa maneira, será calculado $TBM$ (Taxa Bruta de Mortalidade), ${}_n M_x$ (Ta
 - 2024 Masculino - 5 a 9 anos
 
 Foram encontradas nenhuma observação, tanto no Tabnet - Datasus quanto no banco do microdatasus, sendo assim englobado com base nas faixas etárias utilizadas em cada uma das análises com a falta desses dados.
+
+### Letra a
+
+Essa análise tem como objetivo calcular e analisar a Taxa Bruta de Mortalidade (TBM) e as Taxas Específicas de Mortalidade (${n}M{x}$) para o município de Ipatinga nos anos de 2010, 2019, 2021, 2022 e 2024, desagregadas por sexo e faixa etária quinquenal. Para isso, foram utilizados os dados de óbitos provenientes do Sistema de Informações sobre Mortalidade (SIM), obtidos via Tabnet/Datasus, em conjunto com as estimativas populacionais da RIPSA/CGIAE/MS, disponibilizadas pelo mesmo sistema.
+
+A TBM será apresentada de forma comparativa entre os sexos masculino e feminino ao longo do período analisado, permitindo identificar tendências e variações no padrão de mortalidade do município, com destaque para o impacto da pandemia de Covid-19 no ano de 2021. As taxas específicas de mortalidade, por sua vez, serão calculadas para cada faixa etária e visualizadas em gráficos de escala logarítmica.
+
+É importante mencionar que, para os anos, sexos e faixas etárias a seguir, não foram encontradas observações de óbitos, tanto no Tabnet/Datasus quanto no banco do microdatasus: 2010, sexo feminino, 10 a 14 anos; 2021, sexo feminino, 1 a 4 anos; e 2024, sexo masculino, 5 a 9 anos. Esses casos foram tratados como zero nos cálculos, refletindo a real ausência de óbitos registrados nessas categorias durante os respectivos anos, e não necessariamente a ausência de risco.
+
+
+::: {#tbl-tbm layout-align="center" tbl-pos="H"}
+```{=latex}
+\begin{table}
+    \centering
+    \scriptsize
+    \begin{tabular}{l r r r r r r r}
+        \hline
+        \textbf{Ano} & \textbf{Óbitos} & \textbf{Óbitos} & \textbf{Óbitos} & \textbf{Pop.} & \textbf{TBM} & \textbf{TBM} & \textbf{TBM} \\
+                     & \textbf{Masc.}  & \textbf{Fem.}   & \textbf{Total}  & \textbf{Total} & \textbf{Masc.} & \textbf{Fem.} & \textbf{Total} \\
+        \hline
+        2010 & 678 & 529 & 1.207 & 243.934 & 5,73 & 4,21 & 4,95 \\
+        2019 & 693 & 580 & 1.273 & 240.252 & 5,99 & 4,65 & 5,30 \\
+        2021 & 1.078 & 876 & 1.955 & 238.688 & 9,41 & 7,06 & 8,19 \\
+        2022 & 847 & 687 & 1.535 & 237.501 & 7,44 & 5,56 & 6,46 \\
+        2024 & 942 & 776 & 1.718 & 235.445 & 8,36 & 6,32 & 7,30 \\
+        \hline
+    \end{tabular}
+\end{table}
+```
+Taxa Bruta de Mortalidade (por 1.000 hab.) por sexo - 2010--2024
+:::
+
+![Gráfico de linhas de taxa específica de mortalidade por faixa etária 2010](images/nmx2010.png){#fig-nmx2010 fig-align="center"}
+
+![Gráfico de linhas de taxa específica de mortalidade por faixa etária 2019](images/nmx2019.png){#fig-nmx2019 fig-align="center"}
+
+![Gráfico de linhas de taxa específica de mortalidade por faixa etária 2021](images/nmx2021.png){#fig-nmx2021 fig-align="center"}
+
+![Gráfico de linhas de taxa específica de mortalidade por faixa etária 2022](images/nmx2022.png){#fig-nmx2022 fig-align="center"}
+
+![Gráfico de linhas de taxa específica de mortalidade por faixa etária 2024](images/nmx2024.png){#fig-nmx2024 fig-align="center"}
+
+::: {#tbl-nmx-fem layout-align="center" tbl-pos="H"}
+```{=latex}
+\begin{table}
+    \centering
+    \scriptsize
+    \begin{tabular}{l r r r r r}
+        \hline
+        \textbf{Faixa Etária} & \textbf{2010} & \textbf{2019} & \textbf{2021} & \textbf{2022} & \textbf{2024} \\
+        \hline
+        0 a 4 anos       & 2,0993 & 2,5105 & 1,5802 & 2,2030 & 2,3973 \\
+        5 a 9 anos       & 0,1145 & 0,1389 & 0,1414 & \textemdash & 0,4350 \\
+        10 a 14 anos     & \textemdash & \textemdash & 0,2717 & \textemdash & 0,2843 \\
+        15 a 19 anos     & 0,1899 & 0,3438 & 0,3646 & 0,3762 & 0,3979 \\
+        20 a 24 anos     & 0,6869 & 0,3152 & 0,7589 & 0,2221 & 0,2357 \\
+        25 a 29 anos     & 0,6710 & 0,5289 & 0,6540 & 0,3319 & 0,4545 \\
+        30 a 34 anos     & 1,5635 & 1,1360 & 1,4306 & 0,5654 & 0,8207 \\
+        35 a 39 anos     & 1,1722 & 0,8746 & 1,0182 & 0,4184 & 1,4408 \\
+        40 a 44 anos     & 1,9870 & 1,5315 & 1,8586 & 1,0687 & 1,8874 \\
+        45 a 49 anos     & 2,2344 & 2,8014 & 3,6567 & 2,2449 & 2,6729 \\
+        50 a 54 anos     & 5,0684 & 4,6330 & 4,3333 & 2,8554 & 2,6944 \\
+        55 a 59 anos     & 6,1076 & 6,0991 & 7,3068 & 3,2254 & 3,8815 \\
+        60 a 64 anos     & 8,6978 & 6,0958 & 13,8122 & 7,7530 & 9,6347 \\
+        65 a 69 anos     & 17,3035 & 10,9718 & 17,4368 & 12,6351 & 13,5802 \\
+        70 a 74 anos     & 23,6763 & 21,5478 & 23,6842 & 20,3831 & 17,4419 \\
+        75 a 79 anos     & 30,9156 & 104,1943 & 38,0165 & 29,6443 & 26,5609 \\
+        80 anos e mais   & 92,7114 & 202,7972 & 96,3154 & 89,5382 & 91,3335 \\
+        \hline
+    \end{tabular}
+\end{table}
+```
+Taxa Específica de Mortalidade Feminina ($_{n}m_{x}$ × 1.000 hab.) por faixa etária - 2010--2024
+:::
+
+::: {#tbl-nmx-masc layout-align="center" tbl-pos="H"}
+```{=latex}
+\begin{table}
+    \centering
+    \scriptsize
+    \begin{tabular}{l r r r r r}
+        \hline
+        \textbf{Faixa Etária} & \textbf{2010} & \textbf{2019} & \textbf{2021} & \textbf{2022} & \textbf{2024} \\
+        \hline
+        0 a 4 anos       & 3,2783 & 2,2794 & 2,6485 & 1,8577 & 2,3198 \\
+        5 a 9 anos       & 0,3276 & 0,2637 & 0,1342 & 0,1364 & \textemdash \\
+        10 a 14 anos     & 0,4047 & 1,1118 & 0,2603 & 0,2646 & 0,4084 \\
+        15 a 19 anos     & 2,3972 & 1,7931 & 1,5255 & 0,9667 & 1,0258 \\
+        20 a 24 anos     & 2,2922 & 1,6297 & 1,3382 & 1,0231 & 2,6116 \\
+        25 a 29 anos     & 2,8068 & 1,9965 & 0,8039 & 1,2849 & 2,1606 \\
+        30 a 34 anos     & 3,9343 & 2,7307 & 2,3232 & 2,0296 & 3,7351 \\
+        35 a 39 anos     & 2,5803 & 1,4898 & 3,2105 & 1,9281 & 1,5574 \\
+        40 a 44 anos     & 3,6588 & 2,9902 & 4,0027 & 2,7649 & 3,7074 \\
+        45 a 49 anos     & 5,1013 & 4,9764 & 5,2363 & 5,2777 & 4,9499 \\
+        50 a 54 anos     & 6,8512 & 8,2299 & 9,3377 & 6,0026 & 6,0233 \\
+        55 a 59 anos     & 9,4137 & 9,3662 & 11,3208 & 7,5746 & 9,5551 \\
+        60 a 64 anos     & 12,1758 & 13,6801 & 16,3962 & 12,7213 & 14,2391 \\
+        65 a 69 anos     & 22,2478 & 12,6991 & 26,5677 & 18,9645 & 21,9801 \\
+        70 a 74 anos     & 29,9625 & 24,7732 & 41,2926 & 30,4469 & 27,3021 \\
+        75 a 79 anos     & 46,4730 & 103,3520 & 65,1603 & 46,7337 & 39,3901 \\
+        80 anos e mais   & 98,3021 & 360,7496 & 126,7806 & 108,3066 & 105,5743 \\
+        \hline
+    \end{tabular}
+\end{table}
+```
+Taxa Específica de Mortalidade Masculina ($_{n}m_{x}$ × 1.000 hab.) por faixa etária - 2010--2024
+:::
+
+Analisando a [@tbl-tbm], que apresenta a Taxa Bruta de Mortalidade (TBM) por sexo para Ipatinga entre os anos de 2010 e 2024, é possível observar que a mortalidade masculina supera consistentemente a feminina em todos os anos analisados. Em 2010, a TBM masculina foi de 5,73 óbitos por 1.000 habitantes, contra 4,21 no sexo feminino, resultando em uma taxa total de 4,95. Já em 2024, esses valores subiram para 8,36 para homens, 6,32 para mulheres e 7,30 total, evidenciando um aumento expressivo ao longo do período. 
+
+Destaca-se, nesse contexto, o ano de 2021, que concentra os maiores valores de TBM entre todos os anos em análise, com 9,41 para o sexo masculino, 7,06 para o feminino e 8,19 no total. Esse pico é amplamente explicado pela sobremortalidade associada à pandemia de Covid-19, que elevou de forma significativa o número de óbitos registrados naquele ano, o que será aprofundado na análise das causas de morte. 
+
+Após o pico de 2021, verifica-se uma redução da TBM em 2022 para os três estratos analisados, com total de 6,46, seguida de uma nova elevação em 2024. Ainda que esse retorno ao aumento pós-pandemia mereça atenção, os valores de 2024 permanecem abaixo do observado em 2021, sugerindo uma normalização parcial do padrão de mortalidade no município. 
+
+No que se refere às taxas específicas de mortalidade (nMx), expostas nas [@tbl-nmx-fem] e [@tbl-nmx-masc] e visualizadas nas  $\ref{fig-nmx2010}$, $\ref{fig-nmx2019}$, $\ref{fig-nmx2021}$, $\ref{fig-nmx2022}$ e $\ref{fig-nmx2024}$, o padrão observado em todos os anos segue o formato em "J" característico das tábuas de mortalidade: mortalidade relativamente elevada nas faixas mais jovens, queda expressiva a partir dos 5 anos de vida e crescimento progressivo e acelerado a partir dos 40-50 anos, com pico no grupo de 80 anos e mais. 
+
+Para o sexo masculino, nota-se uma elevação pronunciada nas faixas de 15 a 29 anos em todos os anos, reflexo direto da sobremortalidade por causas externas, especialmente acidentes e agressões, fenômeno típico da mortalidade masculina jovem no Brasil. Essa característica é especialmente visível em 2010, quando a nMx masculina de 15 a 19 anos atingiu 2,3972 por 1.000 habitantes, valor substancialmente superior ao feminino de 0,1899. Em 2024, observa-se uma redução relativa dessa diferença, com os valores masculinos para essa faixa caindo para 1,0258, enquanto o feminino sobe ligeiramente para 0,3979, ainda assim mantendo a sobremortalidade masculina. 
+
+Para o sexo feminino, a progressão das nMx nas faixas adultas é mais suave e regular, sem o pico observado na juventude masculina. Os valores femininos começam a se aproximar dos masculinos apenas a partir dos 50 anos de idade, e na faixa de 80 anos e mais, as taxas de ambos os sexos convergem para patamares elevados, com a masculina superando a feminina em 2024. 
+
+Por fim, cabe ressaltar que os valores de nMx para as faixas com ausência de observações em 2010 Feminino 10 a 14 anos, 2021 Feminino 1 a 4 anos e 2024 Masculino 5 a 9 anos em que foram tratados como zero nos cálculos, refletindo a real ausência de óbitos registrados nessas categorias durante os respectivos anos, e não necessariamente ausência de risco. 
+
+
+### Letra b
+
+A seguinte análise tem como objetivo o cálculo da Taxa de Mortalidade Infantil (TMI) e de seus componentes para o município de Ipatinga, com base nos microdados do SIM referentes ao triênio 2022–2024, desagregados por sexo.
+
+A TMI será decomposta em seus componentes neonatal precoce (0 a 6 dias), neonatal tardio (7 a 27 dias) e pós-neonatal (28 a 364 dias), tanto para ambos os sexos em conjunto quanto de forma separada para os sexos feminino e masculino. Essa decomposição permite identificar quais etapas do primeiro ano de vida concentram maior risco de morte, fornecendo subsídios para a interpretação das causas subjacentes e para o direcionamento de políticas de saúde materno-infantil. Os nascidos vivos de referência utilizados para o cálculo correspondem ao registro do ano de 2023, obtido via Tabnet/Datasus (SINASC).
+
+::: {#tbl-tmi-total-obitos layout-align="center" tbl-pos="H"}
+```{=latex}
+\begin{table}
+    \centering
+    \scriptsize
+    \begin{tabular}{l r r r r}
+        \hline
+        \textbf{Ano} & \textbf{Neonatal Precoce (0--6 d)} & \textbf{Neonatal Tardio (7--27 d)} & \textbf{Pós-Neonatal (28--364 d)} & \textbf{Total} \\
+        \hline
+        2022 & 11 & 2 &  9 & 22 \\
+        2023 &  7 & 3 & 12 & 22 \\
+        2024 &  8 & 5 & 11 & 24 \\
+        \textbf{Total} & \textbf{26} & \textbf{10} & \textbf{32} & \textbf{68} \\
+        \hline
+    \end{tabular}
+\end{table}
+```
+Óbitos infantis totais por componente 2022--2024
+:::
+
+::: {#tbl-tmi-total-ind layout-align="center" tbl-pos="H"}
+```{=latex}
+\begin{table}
+    \centering
+    \scriptsize
+    \begin{tabular}{l r r}
+        \hline
+        \textbf{Indicador} & \textbf{Valor (‰)} & \textbf{Valor (prop.)} \\
+        \hline
+        Óbitos médios anuais                                    & \multicolumn{2}{r}{22,6667} \\
+        Nascidos vivos (ref.\ 2023)                             & \multicolumn{2}{r}{2.893} \\
+        \hline
+        TMI --- Taxa de Mortalidade Infantil (\textperthousand) & 7,835004 & 0,007835 \\
+        TMI Neonatal (\textperthousand)                         & 4,147943 & 0,004148 \\
+        \quad TMI Neonatal Precoce (\textperthousand)           & 2,995737 & 0,002996 \\
+        \quad TMI Neonatal Tardia (\textperthousand)            & 1,152206 & 0,001152 \\
+        TMI Pós-Neonatal (\textperthousand)                     & 3,687061 & 0,003687 \\
+        \hline
+    \end{tabular}
+\end{table}
+```
+Indicadores total de mortalidade infantil  2022--2024
+:::
+
+::: {#tbl-tmi-fem-obitos layout-align="center" tbl-pos="H"}
+```{=latex}
+\begin{table}
+    \centering
+    \scriptsize
+    \begin{tabular}{l r r r r}
+        \hline
+        \textbf{Ano} & \textbf{Neonatal Precoce (0--6 d)} & \textbf{Neonatal Tardio (7--27 d)} & \textbf{Pós-Neonatal (28--364 d)} & \textbf{Total} \\
+        \hline
+        2022 & 6 & 1 & 4 & 11 \\
+        2023 & 2 & 2 & 7 & 11 \\
+        2024 & 3 & 3 & 6 & 12 \\
+        \textbf{Total} & \textbf{11} & \textbf{6} & \textbf{17} & \textbf{34} \\
+        \hline
+    \end{tabular}
+\end{table}
+```
+Óbitos infantis por componente - Sexo feminino - 2022--2024
+:::
+
+::: {#tbl-tmi-fem-ind layout-align="center" tbl-pos="H"}
+```{=latex}
+\begin{table}
+    \centering
+    \scriptsize
+    \begin{tabular}{l r r}
+        \hline
+        \textbf{Indicador} & \textbf{Valor (‰)} & \textbf{Valor (prop.)} \\
+        \hline
+        Óbitos médios anuais                                    & \multicolumn{2}{r}{11,3333} \\
+        Nascidos vivos (ref.\ 2023)                             & \multicolumn{2}{r}{1.401} \\
+        \hline
+        TMI --- Taxa de Mortalidade Infantil (\textperthousand) & 8,089460 & 0,008089 \\
+        \hline
+    \end{tabular}
+\end{table}
+```
+Indicadores de mortalidade infantil - Sexo feminino - 2022--2024
+:::
+
+::: {#tbl-tmi-masc-obitos layout-align="center" tbl-pos="H"}
+```{=latex}
+\begin{table}
+    \centering
+    \scriptsize
+    \begin{tabular}{l r r r r}
+        \hline
+        \textbf{Ano} & \textbf{Neonatal Precoce (0--6 d)} & \textbf{Neonatal Tardio (7--27 d)} & \textbf{Pós-Neonatal (28--364 d)} & \textbf{Total} \\
+        \hline
+        2022 & 5 & 1 & 5 & 11 \\
+        2023 & 5 & 1 & 5 & 11 \\
+        2024 & 5 & 2 & 5 & 12 \\
+        \textbf{Total} & \textbf{15} & \textbf{4} & \textbf{15} & \textbf{34} \\
+        \hline
+    \end{tabular}
+\end{table}
+```
+Óbitos infantis por componente - Sexo masculino - 2022--2024
+:::
+
+::: {#tbl-tmi-masc-ind layout-align="center" tbl-pos="H"}
+```{=latex}
+\begin{table}
+    \centering
+    \scriptsize
+    \begin{tabular}{l r r}
+        \hline
+        \textbf{Indicador} & \textbf{Valor (‰)} & \textbf{Valor (prop.)} \\
+        \hline
+        Óbitos médios anuais                                    & \multicolumn{2}{r}{11,3333} \\
+        Nascidos vivos (ref.\ 2023)                             & \multicolumn{2}{r}{1.491} \\
+        \hline
+        TMI --- Taxa de Mortalidade Infantil (\textperthousand) & 7,601163 & 0,007601 \\
+        \hline
+    \end{tabular}
+\end{table}
+```
+Indicadores de mortalidade infantil - Sexo masculino - 2022--2024
+:::
+
+Observando a [@tbl-tmi-total-obitos], que apresenta os óbitos infantis por componente para ambos os sexos no período de 2022 a 2024, nota-se que o total de óbitos infantis ao longo do triênio foi de 68, distribuídos entre os componentes neonatal precoce, com 26 casos; neonatal tardio, com 10 casos; e pós-neonatal, com 32 casos. O componente pós-neonatal, portanto, foi o mais frequente, representando 47,1% do total de óbitos infantis no período analisado.
+
+A partir da [@tbl-tmi-total-ind], que apresenta os indicadores derivados para ambos os sexos, verifica-se que a Taxa de Mortalidade Infantil (TMI) geral do município foi de 7,835 por 1.000 nascidos vivos no triênio. Desse total, a TMI neonatal correspondeu a 4,148‰, sendo subdividida em neonatal precoce (2,996‰) e neonatal tardia (1,152‰), enquanto a TMI pós-neonatal foi de 3,687‰. O fato de a mortalidade pós-neonatal superar a neonatal tardia sugere que fatores ambientais, socioeconômicos e relacionados à assistência à saúde ainda exercem papel relevante na mortalidade infantil de Ipatinga, uma vez que os óbitos pós-neonatais são, em maior medida, evitáveis por intervenções externas ao período perinatal.
+
+Desagregando os dados por sexo, as [@tbl-tmi-fem-obitos] e [@tbl-tmi-fem-ind] mostram que, para o sexo feminino, foram registrados 34 óbitos infantis no triênio, com média de 11,33 óbitos anuais e TMI de 8,089‰ em relação aos 1.401 nascidos vivos femininos de referência. Já para o sexo masculino, as [@tbl-tmi-masc-obitos] e [@tbl-tmi-masc-ind] revelam igual número absoluto de óbitos de 34 casos, porém com TMI ligeiramente inferior, de 7,601‰, em razão do maior contingente de nascidos vivos masculinos no período de referência, totalizando 1.491. Essa inversão entre os sexos, com a TMI feminina superando a masculina, constitui um resultado atípico em relação ao padrão nacional, no qual a mortalidade infantil masculina costuma ser maior, podendo estar associada ao tamanho reduzido do município e à variabilidade estatística inerente a populações pequenas.
+
+No que se refere à composição por componente para o sexo masculino, verifica-se uma distribuição relativamente estável ao longo dos três anos, com os óbitos neonatais precoces mantendo-se em 5 casos em cada ano e os pós-neonatais permanecendo em 5 casos nos anos de 2022, 2023 e 2024. Para o sexo feminino, a variação é maior, com o componente pós-neonatal oscilando entre 4 e 7 óbitos ao longo do triênio.
 
 ### Letra c
 
@@ -743,7 +1003,261 @@ Distribuição por Grupo CID-10 nos anos de 2010, 2021 e 2024 em meninas entre 5
 Distribuição por Grupo CID-10 nos anos de 2010, 2021 e 2024 em meninos entre 5 e 14 anos
 :::
 
+As [@tbl-f514] e [@tbl-m514] apresentam a distribuição por grupo CID-10 para meninas e meninos entre 5 e 14 anos nos anos de 2010, 2021 e 2024. Trata-se de uma faixa etária com mortalidade naturalmente reduzida, o que se reflete no pequeno número absoluto de óbitos registrados no período.
 
+Para as meninas entre 5 e 14 anos, foram contabilizados apenas 9 óbitos ao longo dos três anos. O grupo mais frequente foi “Neoplasias malignas”, com 4 óbitos no total, sendo 3 registrados em 2021 e 1 em 2024. Em 2010, houve apenas 1 óbito nessa faixa etária feminina, decorrente de doenças infecciosas intestinais. Em 2024, além das neoplasias, surgem novos grupos, como “Febres por arbovírus e febres hemorrágicas virais”, “Influenza [gripe] e pneumonia”, “Doenças crônicas das vias aéreas inferiores” e “Acidentes”, cada um com 1 óbito, sugerindo uma diversificação das causas de morte nessa faixa etária ao longo do tempo.
+
+Para os meninos de 5 a 14 anos, foram registrados 13 óbitos nos três anos. O grupo mais frequente foi “Acidentes”, com 5 óbitos no total, sendo 3 em 2010 e 2 em 2024, sem registros em 2021. O grupo “Agressões” apresentou 3 óbitos, todos concentrados em 2010, sem recorrência nos demais anos analisados. Os grupos “Neoplasias malignas”, “Doenças da junção mioneural e dos músculos”, “Outros transtornos do sistema nervoso”, “Doenças cerebrovasculares” e “Malformações congênitas do aparelho circulatório” contribuíram com 1 óbito cada ao longo do período.
+
+##### 15 a 39 anos
+
+::: {#tbl-f15_39 layout-align="center" tbl-pos="H"}
+```{=latex}
+\begin{table}
+    \centering
+    \scriptsize
+        \begin{tabular}{l r r r r}
+            \hline
+            \textbf{Grupo CID-10} & \textbf{2010} & \textbf{2021} & \textbf{2024} & \textbf{Total} \\
+            \hline
+            Neoplasias malignas & 7 & 11 & 5 & 23 \\
+            Acidentes & 8 & 2 & 0 & 10 \\
+            Outras formas de doença do coração & 3 & 2 & 0 & 5 \\
+            Outras doenças por vírus & 0 & 5 & 0 & 5 \\
+            Agressões & 0 & 0 & 5 & 5 \\
+            Doenças cerebrovasculares & 3 & 0 & 1 & 4 \\
+            Outras doenças bacterianas & 3 & 0 & 0 & 3 \\
+            Influenza [gripe] e pneumonia & 2 & 0 & 0 & 2 \\
+            Diabetes mellitus & 0 & 1 & 1 & 2 \\
+            Doenças isquêmicas do coração & 1 & 0 & 1 & 2 \\
+            Outras doenças do aparelho digestivo & 1 & 1 & 0 & 2 \\
+            Obesidade e outras formas de hiperalimentação & 0 & 2 & 0 & 2 \\
+            Insuficiência renal & 0 & 0 & 1 & 1 \\
+            Doenças das artérias, das arteríolas e capilares & 1 & 0 & 0 & 1 \\
+            Doenças do fígado & 1 & 0 & 0 & 1 \\
+            Doença pelo vírus da imunodeficiência humana [HIV] & 1 & 0 & 0 & 1 \\
+            Transt vesícula biliar, vias biliares e pâncreas & 0 & 0 & 1 & 1 \\
+            Doenças cardíaca pulmonar e da circulação pulmonar & 0 & 1 & 0 & 1 \\
+            Outras doenças do aparelho respiratório & 0 & 1 & 0 & 1 \\
+            Causas mal definidas e desconhecidas mortalidade & 0 & 0 & 1 & 1 \\
+            \hline
+            \textbf{Total} & \textbf{31} & \textbf{26} & \textbf{16} & \textbf{73} \\
+            \hline
+        \end{tabular}
+\end{table}
+```
+Distribuição por Grupo CID-10 nos anos de 2010, 2021 e 2024 em mulheres 15 a 39 anos
+:::
+
+::: {#tbl-m15_39 layout-align="center" tbl-pos="H"}
+```{=latex}
+\begin{table}
+    \centering
+    \scriptsize
+        \begin{tabular}{l r r r r}
+            \hline
+            \textbf{Grupo CID-10} & \textbf{2010} & \textbf{2021} & \textbf{2024} & \textbf{Total} \\
+            \hline
+            Agressões & 47 & 20 & 36 & 103 \\
+            Acidentes & 33 & 14 & 16 & 63 \\
+            Neoplasias malignas & 8 & 7 & 5 & 20 \\
+            Lesões autoprovocadas intencionalmente & 5 & 4 & 8 & 17 \\
+            Eventos (fatos) cuja intenção é indeterminada & 12 & 4 & 0 & 16 \\
+            Outras doenças por vírus & 0 & 13 & 0 & 13 \\
+            Doenças do fígado & 7 & 0 & 1 & 8 \\
+            Doenças cerebrovasculares & 2 & 2 & 2 & 6 \\
+            Outras formas de doença do coração & 1 & 3 & 2 & 6 \\
+            Transt ment e comport dev ao uso subst psicoativa & 3 & 0 & 2 & 5 \\
+            Doenças isquêmicas do coração & 4 & 0 & 0 & 4 \\
+            Influenza [gripe] e pneumonia & 1 & 1 & 2 & 4 \\
+            Outras doenças bacterianas & 3 & 0 & 1 & 4 \\
+            Insuficiência renal & 3 & 0 & 0 & 3 \\
+            Doenças crônicas das vias aéreas inferiores & 0 & 1 & 0 & 1 \\
+            Diabetes mellitus & 1 & 0 & 0 & 1 \\
+            Doenças hipertensivas & 0 & 1 & 0 & 1 \\
+            Outras doenças degenerativas do sistema nervoso & 0 & 0 & 1 & 1 \\
+            Febres por arbovírus e febres hemorrágicas virais & 0 & 0 & 1 & 1 \\
+            Causas mal definidas e desconhecidas mortalidade & 0 & 0 & 1 & 1 \\
+            \hline
+            \textbf{Total} & \textbf{130} & \textbf{70} & \textbf{79} & \textbf{279} \\
+            \hline
+        \end{tabular}
+\end{table}
+```
+Distribuição por Grupo CID-10 nos anos de 2010, 2021 e 2024 em homens 15 a 39 anos
+:::
+
+A faixa etária de 15 a 39 anos é, em geral, aquela em que a influência das causas externas se mostra mais marcante, especialmente entre indivíduos do sexo masculino. As [@tbl-f15_39] e [@tbl-m15_39] confirmam esse padrão para o município de Ipatinga nos anos de 2010, 2021 e 2024.
+
+Para as mulheres de 15 a 39 anos, o grupo mais frequente foi “Neoplasias malignas”, com 23 óbitos distribuídos nos três anos, sendo 7 em 2010, 11 em 2021 e 5 em 2024. “Acidentes” aparece em segundo lugar, com 10 óbitos, concentrados majoritariamente em 2010, apresentando queda expressiva para 2 em 2021 e ausência de registros em 2024. Grupos como “Outras doenças por vírus”, representando os óbitos por Covid-19, contabilizaram 5 casos exclusivamente em 2021, enquanto “Agressões” surgiu apenas em 2024, com 5 óbitos, resultado que chama atenção do ponto de vista da mortalidade feminina por violência no período mais recente.
+
+Para os homens de 15 a 39 anos, o padrão é substancialmente diferente. “Agressões” foi, de longe, o grupo mais frequente no conjunto dos três anos, com 103 óbitos no total, sendo 47 em 2010, 20 em 2021 e 36 em 2024, evidenciando a persistência da violência como principal causa de morte masculina nessa faixa etária ao longo de quatorze anos. “Acidentes” ocupa o segundo lugar, com 63 óbitos no total, seguido de “Neoplasias malignas”, “Lesões autoprovocadas intencionalmente” e “Eventos de intenção indeterminada”. “Outras doenças por vírus”, representando a Covid-19, acumulou 13 óbitos exclusivamente em 2021.
+
+A comparação entre os sexos nessa faixa etária é particularmente reveladora. Enquanto as mulheres acumularam 73 óbitos nos três anos, os homens registraram 279, correspondendo a uma razão aproximada de 3,8 homens para cada mulher.
+
+##### 40 a 59 anos
+
+::: {#tbl-f40_59 layout-align="center" tbl-pos="H"}
+```{=latex}
+\begin{table}
+    \centering
+    \scriptsize
+        \begin{tabular}{l r r r r}
+            \hline
+            \textbf{Grupo CID-10} & \textbf{2010} & \textbf{2021} & \textbf{2024} & \textbf{Total} \\
+            \hline
+            Neoplasias malignas & 40 & 24 & 37 & 101 \\
+            Outras doenças por vírus & 0 & 48 & 0 & 48 \\
+            Diabetes mellitus & 2 & 8 & 11 & 21 \\
+            Doenças isquêmicas do coração & 5 & 6 & 7 & 18 \\
+            Doenças cerebrovasculares & 6 & 7 & 4 & 17 \\
+            Acidentes & 4 & 4 & 8 & 16 \\
+            Outras formas de doença do coração & 6 & 6 & 2 & 14 \\
+            Doenças hipertensivas & 2 & 7 & 1 & 10 \\
+            Doenças do fígado & 4 & 3 & 3 & 10 \\
+            Influenza [gripe] e pneumonia & 3 & 3 & 2 & 8 \\
+            Outras doenças bacterianas & 3 & 2 & 1 & 6 \\
+            Doenças crônicas das vias aéreas inferiores & 3 & 1 & 1 & 5 \\
+            Doença pelo vírus da imunodeficiência humana [HIV] & 5 & 0 & 0 & 5 \\
+            Outras doenças respirat q afetam princ interstício & 3 & 0 & 1 & 4 \\
+            Transt vesícula biliar, vias biliares e pâncreas & 3 & 1 & 0 & 4 \\
+            Insuficiência renal & 2 & 0 & 1 & 3 \\
+            Doenças das artérias, das arteríolas e capilares & 2 & 0 & 0 & 2 \\
+            Doenças infecciosas intestinais & 2 & 0 & 0 & 2 \\
+            Outras doenças do aparelho digestivo & 1 & 1 & 0 & 2 \\
+            Causas mal definidas e desconhecidas mortalidade & 0 & 0 & 2 & 2 \\
+            \hline
+            \textbf{Total} & \textbf{96} & \textbf{123} & \textbf{82} & \textbf{301} \\
+            \hline
+        \end{tabular}
+\end{table}
+```
+Distribuição por Grupo CID-10 nos anos de 2010, 2021 e 2024 em mulheres 40 a 59 anos
+:::
+
+::: {#tbl-m40_59 layout-align="center" tbl-pos="H"}
+```{=latex}
+\begin{table}
+    \centering
+    \scriptsize
+        \begin{tabular}{l r r r r}
+            \hline
+            \textbf{Grupo CID-10} & \textbf{2010} & \textbf{2021} & \textbf{2024} & \textbf{Total} \\
+            \hline
+            Neoplasias malignas & 32 & 23 & 37 & 92 \\
+            Outras doenças por vírus & 0 & 63 & 0 & 63 \\
+            Acidentes & 19 & 12 & 17 & 48 \\
+            Doenças isquêmicas do coração & 20 & 7 & 8 & 35 \\
+            Diabetes mellitus & 9 & 11 & 14 & 34 \\
+            Doenças cerebrovasculares & 13 & 6 & 9 & 28 \\
+            Doenças do fígado & 12 & 8 & 8 & 28 \\
+            Doenças hipertensivas & 1 & 11 & 12 & 24 \\
+            Agressões & 6 & 8 & 9 & 23 \\
+            Outras formas de doença do coração & 6 & 10 & 5 & 21 \\
+            Influenza [gripe] e pneumonia & 3 & 6 & 9 & 18 \\
+            Transt ment e comport dev ao uso subst psicoativa & 5 & 0 & 8 & 13 \\
+            Lesões autoprovocadas intencionalmente & 1 & 3 & 4 & 8 \\
+            Causas mal definidas e desconhecidas mortalidade & 0 & 0 & 7 & 7 \\
+            Eventos (fatos) cuja intenção é indeterminada & 3 & 3 & 0 & 6 \\
+            Outras doenças respirat q afetam princ interstício & 6 & 0 & 0 & 6 \\
+            Transt vesícula biliar, vias biliares e pâncreas & 6 & 0 & 0 & 6 \\
+            Outras doenças bacterianas & 2 & 2 & 1 & 5 \\
+            Doenças crônicas das vias aéreas inferiores & 2 & 0 & 2 & 4 \\
+            Distúrbios metabólicos & 4 & 0 & 0 & 4 \\
+            \hline
+            \textbf{Total} & \textbf{153} & \textbf{183} & \textbf{156} & \textbf{492} \\
+            \hline
+        \end{tabular}
+\end{table}
+```
+Distribuição por Grupo CID-10 nos anos de 2010, 2021 e 2024 em homens 40 a 59 anos
+:::
+
+Na faixa etária de 40 a 59 anos, o perfil de mortalidade inicia uma transição das causas externas para as doenças crônicas não transmissíveis, embora as primeiras ainda permaneçam expressivas no caso masculino. Para as mulheres de 40 a 59 anos na [@tbl-f40_59], “Neoplasias malignas” mantém-se como o grupo mais prevalente, com 101 óbitos no total entre os anos de 2010, 2021 e 2024, distribuídos em 40 registros em 2010, 24 em 2021 e 37 em 2024. “Outras doenças por vírus”, representando a Covid-19, surge exclusivamente em 2021, com 48 óbitos, configurando-se como o segundo grupo mais frequente naquele ano. “Diabetes mellitus” apresenta crescimento ao longo do período, passando de 2 óbitos em 2010 para 11 em 2024, indicando a ampliação da relevância dessa condição crônica na mortalidade feminina adulta. “Doenças isquêmicas do coração” e “Doenças cerebrovasculares” também mantêm participação importante nos três anos analisados, totalizando 18 e 17 óbitos, respectivamente.
+
+Para os homens de 40 a 59 anos, analisando a [@tbl-m40_59], observa-se um perfil mais diversificado. “Neoplasias malignas” ocupa a primeira posição, com 92 óbitos, seguida de “Outras doenças por vírus”, com 63 registros em 2021, e “Acidentes”, com 48 óbitos distribuídos entre os três anos. “Doenças isquêmicas do coração” contabilizam 35 óbitos, enquanto “Diabetes mellitus” soma 34 e “Doenças cerebrovasculares”, 28. “Agressões” permanecem presentes nessa faixa etária, com 23 óbitos no total, evidenciando que a violência não se limita às idades mais jovens no sexo masculino. “Transtornos mentais e comportamentais devidos ao uso de substâncias psicoativas” registram 13 óbitos exclusivamente entre os homens, indicando o impacto das dependências químicas sobre a mortalidade adulta.
+
+##### 60 anos e mais
+
+::: {#tbl-f60 layout-align="center" tbl-pos="H"}
+```{=latex}
+\begin{table}
+    \centering
+    \scriptsize
+        \begin{tabular}{l r r r r}
+            \hline
+            \textbf{Grupo CID-10} & \textbf{2010} & \textbf{2021} & \textbf{2024} & \textbf{Total} \\
+            \hline
+            Neoplasias malignas & 64 & 99 & 89 & 252 \\
+            Outras doenças por vírus & 0 & 186 & 0 & 186 \\
+            Doenças cerebrovasculares & 38 & 52 & 46 & 136 \\
+            Influenza [gripe] e pneumonia & 29 & 36 & 62 & 127 \\
+            Diabetes mellitus & 31 & 36 & 60 & 127 \\
+            Doenças isquêmicas do coração & 23 & 32 & 49 & 104 \\
+            Doenças hipertensivas & 18 & 28 & 57 & 103 \\
+            Outras formas de doença do coração & 23 & 50 & 24 & 97 \\
+            Doenças crônicas das vias aéreas inferiores & 24 & 10 & 19 & 53 \\
+            Outras doenças degenerativas do sistema nervoso & 6 & 15 & 27 & 48 \\
+            Outras doenças do aparelho urinário & 0 & 16 & 24 & 40 \\
+            Acidentes & 4 & 18 & 13 & 35 \\
+            Outras doenças bacterianas & 5 & 10 & 17 & 32 \\
+            Outras doenças do aparelho digestivo & 5 & 8 & 7 & 20 \\
+            Transt vesícula biliar, vias biliares e pâncreas & 3 & 8 & 7 & 18 \\
+            Doenças do fígado & 2 & 5 & 9 & 16 \\
+            Insuficiência renal & 9 & 0 & 6 & 15 \\
+            Outras doenças respirat q afetam princ interstício & 4 & 0 & 7 & 11 \\
+            Alguns transt q comprometem o mecanismo imunitário & 0 & 0 & 10 & 10 \\
+            Distúrbios metabólicos & 9 & 0 & 0 & 9 \\
+            \hline
+            \textbf{Total} & \textbf{307} & \textbf{618} & \textbf{539} & \textbf{1464} \\
+            \hline
+        \end{tabular}
+\end{table}
+```
+Distribuição por Grupo CID-10 nos anos de 2010, 2021 e 2024 em mulheres 60 anos e mais
+:::
+
+::: {#tbl-m60 layout-align="center" tbl-pos="H"}
+```{=latex}
+\begin{table}
+    \centering
+    \scriptsize
+        \begin{tabular}{l r r r r}
+            \hline
+            \textbf{Grupo CID-10} & \textbf{2010} & \textbf{2021} & \textbf{2024} & \textbf{Total} \\
+            \hline
+            Neoplasias malignas & 72 & 99 & 146 & 317 \\
+            Outras doenças por vírus & 0 & 255 & 0 & 255 \\
+            Doenças cerebrovasculares & 44 & 54 & 50 & 148 \\
+            Influenza [gripe] e pneumonia & 15 & 40 & 73 & 128 \\
+            Doenças isquêmicas do coração & 34 & 25 & 49 & 108 \\
+            Diabetes mellitus & 14 & 38 & 37 & 89 \\
+            Doenças hipertensivas & 15 & 31 & 41 & 87 \\
+            Outras formas de doença do coração & 16 & 45 & 24 & 85 \\
+            Acidentes & 10 & 24 & 29 & 63 \\
+            Doenças crônicas das vias aéreas inferiores & 26 & 18 & 16 & 60 \\
+            Doenças do fígado & 8 & 12 & 16 & 36 \\
+            Outras doenças do aparelho urinário & 0 & 14 & 12 & 26 \\
+            Outras doenças degenerativas do sistema nervoso & 0 & 11 & 13 & 24 \\
+            Outras doenças bacterianas & 4 & 10 & 9 & 23 \\
+            Insuficiência renal & 8 & 0 & 10 & 18 \\
+            Febres por arbovírus e febres hemorrágicas virais & 0 & 0 & 12 & 12 \\
+            Doenças pulmonares devidas a agentes externos & 0 & 0 & 10 & 10 \\
+            Doenças cardíaca pulmonar e da circulação pulmonar & 0 & 9 & 0 & 9 \\
+            Doenças das artérias, das arteríolas e capilares & 8 & 0 & 0 & 8 \\
+            Transt ment e comport dev ao uso subst psicoativa & 3 & 0 & 4 & 7 \\
+            \hline
+            \textbf{Total} & \textbf{286} & \textbf{697} & \textbf{557} & \textbf{1540} \\
+            \hline
+        \end{tabular}
+\end{table}
+```
+Distribuição por Grupo CID-10 nos anos de 2010, 2021 e 2024 em homens 60 anos e mais
+:::
+
+A população com 60 anos ou mais concentra a maior parcela dos óbitos em todos os anos analisados, evidenciando a predominância das doenças crônicas degenerativas e dos agravos associados ao envelhecimento. No grupo feminino com 60 anos ou mais na [@tbl-f60], observa-se o predomínio de “Neoplasias malignas”, que lideram com ampla diferença, somando 252 óbitos ao longo dos três anos analisados. Em 2021, “Outras doenças por vírus”, representando a Covid-19, registraram 186 óbitos e configuraram o segundo grupo mais frequente naquele período. Na sequência, “Doenças cerebrovasculares” totalizaram 136 óbitos, distribuídos de maneira relativamente estável entre os anos. “Influenza [gripe] e pneumonia” e “Diabetes mellitus” apresentaram igual número de registros, com 127 óbitos cada, além de demonstrarem crescimento em 2024 quando comparado a 2010. Chama atenção ainda o avanço das “Doenças hipertensivas” ao longo da série temporal, passando de 18 óbitos em 2010 para 57 em 2024.
+
+Entre os homens com 60 anos ou mais na [@tbl-m60], o perfil de mortalidade também é liderado por “Neoplasias malignas”, que acumulam 317 óbitos no total, superando os valores observados no sexo feminino e alcançando crescimento expressivo em 2024, com 146 registros — o maior quantitativo entre os anos analisados e entre os sexos. Em seguida, “Outras doenças por vírus” somaram 255 óbitos exclusivamente em 2021. “Doenças cerebrovasculares” contribuíram com 148 óbitos, seguidas por “Influenza [gripe] e pneumonia” com 128, “Doenças isquêmicas do coração” com 108 e “Diabetes mellitus” com 89. Além dessas causas, grupos como “Doenças crônicas das vias aéreas inferiores”, “Doenças do fígado” e “Acidentes” mantiveram participação relevante, demonstrando a diversidade de fatores associados à mortalidade masculina idosa. Destaca-se ainda o aparecimento, em 2024, de “Febres por arbovírus e febres hemorrágicas virais”, com 12 óbitos, e de “Doenças pulmonares devidas a agentes externos”, com 10 óbitos, categorias ausentes nos anos anteriores.
 
 ### Letra d
 
