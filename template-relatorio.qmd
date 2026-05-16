@@ -26,13 +26,13 @@ Para o tratamento e análise de dados, foram utilizados o software R em sua vers
 
 ## Alves & Cavenaghi (2012); Berquó & Cavenaghi (2014); Potter et al. (2010); Silva et al. (2022); Adhikari (2023).
 
-## Bahia, Camila Alves et al. Feminicídios em Minas Gerais, Brasil: da caracterização dos eventos à análise espaço-temporal. Cadernos de Saúde Pública [online]. v. 41, n. 1 [Acessado 11 Maio 2026] , e00015224. Disponível em: <https://doi.org/10.1590/0102-311XPT015224>. ISSN 1678-4464. https://doi.org/10.1590/0102-311XPT015224.
+- Bahia, Camila Alves et al. Feminicídios em Minas Gerais, Brasil: da caracterização dos eventos à análise espaço-temporal. Cadernos de Saúde Pública [online]. v. 41, n. 1 [Acessado 11 Maio 2026] , e00015224. Disponível em: <https://doi.org/10.1590/0102-311XPT015224>. ISSN 1678-4464. https://doi.org/10.1590/0102-311XPT015224.
 
-## Faria R, Santana P. Variações espaciais e desigualdades regionais no indicador de mortalidade infantil do estado de Minas Gerais, Brasil. Saude soc [Internet]. 2016Jul;25(3):736–49. Available from: https://doi.org/10.1590/S0104-12902016147609
+- Faria R, Santana P. Variações espaciais e desigualdades regionais no indicador de mortalidade infantil do estado de Minas Gerais, Brasil. Saude soc [Internet]. 2016Jul;25(3):736–49. Available from: https://doi.org/10.1590/S0104-12902016147609
 
-## Gonçalves GQ, Carvalho JAM de, Wong LLR, Turra CM. A transição da fecundidade no Brasil ao longo do século XX – uma perspectiva regional. Rev bras estud popul [Internet]. 2019;36:e0098. Available from: https://doi.org/10.20947/S0102-3098a0098
+- Gonçalves GQ, Carvalho JAM de, Wong LLR, Turra CM. A transição da fecundidade no Brasil ao longo do século XX – uma perspectiva regional. Rev bras estud popul [Internet]. 2019;36:e0098. Available from: https://doi.org/10.20947/S0102-3098a0098
 
-## Caldas, Aline Diniz Rodrigues, Santos, Ricardo Ventura.e.Cardoso, Andrey MoreiraIniquidades étnico-raciais na mortalidade infantil: implicações de mudanças do registro de cor/raça nos sistemas nacionais de informação em saúde no Brasil. Cadernos de Saúde Pública [online]. v. 38, n. 4 [Acessado.12 Maio 2026] , e00101721. Disponível em: <https://doi.org/10.1590/0102-311X00101721>. ISSN 1678-4464. https://doi.org/10.1590/0102-311X00101721.
+- Caldas, Aline Diniz Rodrigues, Santos, Ricardo Ventura.e.Cardoso, Andrey MoreiraIniquidades étnico-raciais na mortalidade infantil: implicações de mudanças do registro de cor/raça nos sistemas nacionais de informação em saúde no Brasil. Cadernos de Saúde Pública [online]. v. 38, n. 4 [Acessado.12 Maio 2026] , e00101721. Disponível em: <https://doi.org/10.1590/0102-311X00101721>. ISSN 1678-4464. https://doi.org/10.1590/0102-311X00101721.
 
 
 # Análises
@@ -163,7 +163,7 @@ Tabela de ${}_n f_x$ feminino
 
 Analisando a [@tbl-ind], observa-se uma trajetória de declínio. A Taxa Bruta de Natalidade reduziu-se de 13,94 para 11,07 entre 2010 e 2024, indicando que o número de nascimentos em relação à população total está diminuindo progressivamente. Além disso, o comportamento da Taxa de Fecundidade Total (TFT), que se manteve sistematicamente abaixo do nível de reposição populacional (2,1 filhos por mulher). Ao atingir o patamar de 1,50 em 2024, a região consolida-se em um regime de baixa fecundidade, o que implica, no longo prazo, estreitamento da base da pirâmide etária e acelerado processo de envelhecimento populacional.
 
-A Taxa Bruta de Reprodução (apenas nascimentos femininos) variou entre 0,73 e 0,76, sempre inferior a 1. A Taxa Líquida de Reprodução, que incorpora a mortalidade feminina até o final do período reprodutivo, apresentou valores próximos a 0,85–0,88 nos primeiros anos, mas caiu para 0,73 em 2024. Esse comportamento sinaliza que a população local não possui capacidade de auto reposição natural nas condições atuais.
+A Taxa Bruta de Reprodução (apenas nascimentos femininos) variou entre 0,73 e 0,76, sempre inferior a 1. A Taxa Líquida de Reprodução, que incorpora a mortalidade feminina até o final do período reprodutivo, apresentou valores próximos a 0,85 – 0,88 nos primeiros anos, mas caiu para 0,73 em 2024. Esse comportamento sinaliza que a população local não possui capacidade de auto reposição natural nas condições atuais.
 
 #### Análise das Taxas Específicas de Fecundidade 
 
@@ -195,9 +195,9 @@ Tabela de ${}_n f_x$ feminino
 
 As projeções, estas presentes na [@tbl-ibge], superestimaram a população em cerca de 4,3%, levando a uma subestimativa das taxas. Com a população real menor, a TBN sobe para 12,13 e a TFT para 1,65 filhos por mulher – ainda abaixo do nível de reposição, mas mais elevada do que as projeções indicavam. Esse achado reforça a importância de utilizar dados censitários sempre que disponíveis.
 
-Os resultados revelam queda sustentada da fecundidade em Ipatinga, com TFT abaixo de 2,1 filhos por mulher e TLR inferior a 1, indicando tendência ao crescimento vegetativo negativo. A redução da TBN (13,94 para 11,07) e da TFG (47,00 para 42,17) alinha‑se à “fase muito baixa da fecundidade” descrita por Alves & Cavenaghi (2012), cujos determinantes são a anticoncepção, a escolaridade e a inserção feminina no trabalho (Potter et al., 2010).
+Os resultados revelam queda sustentada da fecundidade em Ipatinga, com TFT abaixo de 2,1 filhos por mulher e TLR inferior a 1, indicando tendência ao crescimento vegetativo negativo. A redução da TBN (13,94 para 11,07) e da TFG (47,00 para 42,17) alinha - se à “fase muito baixa da fecundidade” descrita por Alves & Cavenaghi (2012), cujos determinantes são a anticoncepção, a escolaridade e a inserção feminina no trabalho (Potter et al., 2010).
 
-A $\ref{fig-nfx}$ mostra deslocamento do pico etário: em 2010, o pico era entre os 20 e 24 anos (0,0709); a partir de 2019, desloca-se para 25‑29 anos (0,0809 em 2024), evidenciando o adiamento da maternidade (Berquó & Cavenaghi, 2014). A fecundidade adolescente (15 a 19 anos) caiu 29% (0,0363 para 0,0257), enquanto a fecundidade após os 30 anos aumentou, especialmente no grupo 35 - 39 anos (crescimento de 29%), refletindo postergação associada à maior escolaridade e profissionalização (Adhikari, 2023). Em 2021, observa‑se leve inflexão pandêmica (pico mais tardio aos 30‑34 anos), compatível com o “efeito incerteza” da COVID-19 (Silva et al., 2022). A fecundidade tardia (40‑49 anos) permanece marginal (≤0,0135). A TFT recuou de 1,53 para 1,50, mas o calendário reprodutivo alterou‑se profundamente.
+A $\ref{fig-nfx}$ mostra deslocamento do pico etário: em 2010, o pico era entre os 20 e 24 anos (0,0709); a partir de 2019, desloca-se para 25 - 29 anos (0,0809 em 2024), evidenciando o adiamento da maternidade (Berquó & Cavenaghi, 2014). A fecundidade adolescente (15 a 19 anos) caiu 29% (0,0363 para 0,0257), enquanto a fecundidade após os 30 anos aumentou, especialmente no grupo 35 - 39 anos (crescimento de 29%), refletindo postergação associada à maior escolaridade e profissionalização (Adhikari, 2023). Em 2021, observa-se leve inflexão pandêmica (pico mais tardio aos 30-34 anos), compatível com o “efeito incerteza” da COVID-19 (Silva et al., 2022). A fecundidade tardia (40-49 anos) permanece marginal (≤0,0135). A TFT recuou de 1,53 para 1,50, mas o calendário reprodutivo alterou-se profundamente.
 
 A TBR (0,73 e 0,76) e a TLR (0,87 e 0,73) são inferiores a 1. A pequena diferença entre elas (0,741 contra 0,73 em 2024) mostra que a mortalidade feminina jovem é baixa, e a queda na reprodução deve-se principalmente ao comportamento reprodutivo. Desse modo, Ipatinga já se encontra em regime de fecundidade abaixo da reposição.
 
@@ -271,7 +271,7 @@ Contingência da idade da mãe pela escolaridade
 Frequência Relativa das idades da mãe pela escolaridade
 :::
 
-A [@tbl-cont1] em conjunto com a $\ref{fig-esc1}$ e a $\ref{fig-esc2}$ mostram a relação entre idade materna e escolaridade. Mães adolescentes (10 a 19 anos) concentram‑se nos níveis 4 a 7 e 8 a 11 anos, com menos de 2% tendo 12+ anos. A proporção de ensino superior cresce com a idade: 10,1% aos 20‑24 anos, 26,6% aos 25 a 29, 41,0% aos 30 a 34 e 46,3% aos 35‑39 anos. Acima de 40 anos, o percentual de 12+ anos recua (42,7% aos 40 a 44, 40,6% aos 45 a 49), e aumentam as categorias de baixa escolaridade. O Qui‑Quadrado é $\chi^2$ = 4.116,5 (gl=32, p<0,001) e o coeficiente de contingência C = 0,341, indicando associação moderada – a idade explica cerca de 10% da variação educacional.
+A [@tbl-cont1] em conjunto com a $\ref{fig-esc1}$ e a $\ref{fig-esc2}$ mostram a relação entre idade materna e escolaridade. Mães adolescentes (10 a 19 anos) concentram-se nos níveis 4 a 7 e 8 a 11 anos, com menos de 2% tendo 12+ anos. A proporção de ensino superior cresce com a idade: 10,1% aos 20 - 24 anos, 26,6% aos 25 a 29, 41,0% aos 30 a 34 e 46,3% aos 35-39 anos. Acima de 40 anos, o percentual de 12+ anos recua (42,7% aos 40 a 44, 40,6% aos 45 a 49), e aumentam as categorias de baixa escolaridade. O Qui-Quadrado é $\chi^2$ = 4.116,5 (gl=32, p<0,001) e o coeficiente de contingência C = 0,341, indicando associação moderada – a idade explica cerca de 10% da variação educacional.
 
 #### Tipo de Parto X Escolaridade
 
@@ -319,7 +319,7 @@ Frequência Relativa dos tipos de parto pela escolaridade
 
 ![Gráfico de barras do tipo de parto pela escolaridade](images/parto.png){#fig-parto fig-align="center"}
 
-Para avaliar corretamente a associação, calculam‑se as proporções de parto vaginal e cesáreo dentro de cada nível de escolaridade [@tbl-cont2]. A $\ref{fig-parto}$ evidencia que, quanto maior a escolaridade, maior a frequência de cesarianas. Entre mães sem instrução, 47,8% tiveram cesárea; entre as com nível superior, 70,0%. A razão de chances (superior vs. sem instrução) é de aproximadamente 2,55. O Qui‑Quadrado (excluindo ignorados) é $\chi^2$ ≈ 2.870,4 (gl=4, p<0,001) e o coeficiente de contingência C = 0,114, indicando associação fraca, isto é, a escolaridade explica apenas 1,3% da variação do tipo de parto.
+Para avaliar corretamente a associação, calculam-se as proporções de parto vaginal e cesáreo dentro de cada nível de escolaridade [@tbl-cont2]. A $\ref{fig-parto}$ evidencia que, quanto maior a escolaridade, maior a frequência de cesarianas. Entre mães sem instrução, 47,8% tiveram cesárea; entre as com nível superior, 70,0%. A razão de chances (superior vs. sem instrução) é de aproximadamente 2,55. O Qui-Quadrado (excluindo ignorados) é $\chi^2$ ≈ 2.870,4 (gl=4, p<0,001) e o coeficiente de contingência C = 0,114, indicando associação fraca, isto é, a escolaridade explica apenas 1,3% da variação do tipo de parto.
 
 ## Questão 3
 
