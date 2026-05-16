@@ -39,7 +39,7 @@ Para o tratamento e análise de dados, foram utilizados o software R em sua vers
 
 ## Questão 1
 
-Essa análise foi feita com o intuito de entender os nascimentos e óbitos durante o período de 2000 até 2024 em Ipatingana na faixa etária de 0 a 5 anos completos, obtendo assim uma noção da probabilidade de sobrevivência. Para isso, foi feito um diagrama de Lexis e as probabilidades de sobrevivência foram calculadas. 
+Essa análise foi feita com o intuito de entender os nascimentos e óbitos durante o período de 2000 até 2024 em Ipatingana na faixa etária de 0 a 5 anos completos, obtendo assim uma noção da probabilidade de sobrevivência. Para isso, foi feito um diagrama de Lexis e as probabilidades de sobrevivência foram calculadas utilizando os microdados do SIM obtidos por meio do pacote microdatasus. 
 
 
 ```{r}
@@ -1051,6 +1051,12 @@ Observando a $\ref{fig-nqxfem}$, as probabilidades de morte representado por ${}
 
 Já a $\ref{fig-nqxmasc}$, o comportamento de ambas as probabilidades é semelhante quando comparado um com o outro, mas com uma leve diferença na faixa de 60 a 64 anos e entre 75 a 79 anos, essa última com o ano de 2010 prevalecendo o de 2024.
 
-# Conclusões
+# Conclusões  
 
-Quando analisado a existência de assosiação entre o tipo de parto com a escolaridade da mãe e a idade delas com base na escolaridade, nota-se que ambas são significativas. A relação idade‑escolaridade é moderada (C=0,341), enquanto a relação tipo de parto - escolaridade, embora clinicamente relevante, tem baixa magnitude (C=0,114).
+Por meio das análises realizadas, foi possível ter uma melhor compreensão do perfil demográfico de Ipatinga MG. Através do gráfico de Lexis, observou-se que a maioria dos óbitos no período da infância estão concentrados no primeiro ano de vida, e que a probabilidade de sobrevivência até o primeiro aniversário assumiu 0,9885, um valor maior do que o observado por Faria R. (2016) para Minas Gerais. Ademais, observou-se uma diminuição do número de nascidos, seguindo a tendência nacional descrita por Gonçalves GQ (2019).  
+
+Utilizando os dados do SINASC, foram calculadas as taxas de fecundidade/natalidade para Ipatinga nos anos de 2010, 2019, 2021, 2022 e 2024. Nota-se que tanto a TBN e a TFG apresentaram queda ao longo dos anos. Além disso, tanto a TLR e a TFT apresentaram valores abaixo do nível de reposição (1 e 2,1 respectivamente)
+
+Quando analisada a existência de associação entre o tipo de parto com a escolaridade da mãe e a idade delas com base na escolaridade, nota-se que ambas são significativas. A relação idade-escolaridade é moderada (C=0,341), enquanto a relação tipo de parto - escolaridade, embora clinicamente relevante, tem baixa magnitude (C=0,114).  
+
+Por fim, foi análisado as principais causas de morte por faixa etária e sexo e confecionado as Tábuas de Vida para ambos os sexos e para os anos de 2010 e 2024. A esperança de vida ao nascer para as meninas em 2010 foi de 80,11 anos e para os meninos foi de 73,84 anos. Em 2024, ambos os grupos tiveram um aumento na esperança de vida de aproximadamente 1 ano: 81,45 para as meninas e 74,94 para os meninos.
